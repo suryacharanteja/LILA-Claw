@@ -1,0 +1,27 @@
+{
+  "name": "lila-claw-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "build": "vite build --config web/vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "generate:contracts": "json2ts -i docs/lld/contracts/protocol-v1.schema.json -o web/src/api/generated.ts --unreachableDefinitions"
+  },
+  "dependencies": {
+    "react": "19.x",
+    "react-dom": "19.x",
+    "react-router": "7.x",
+    "@tanstack/react-query": "5.x"
+  },
+  "devDependencies": {
+    "typescript": "5.x",
+    "vite": "7.x",
+    "@types/react": "19.x",
+    "@types/react-dom": "19.x",
+    "@types/chrome": "0.x",
+    "json-schema-to-typescript": "15.x"
+  }
+}

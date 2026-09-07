@@ -1,0 +1,1236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lila:contracts:v1",
+  "title": "LILA protocol v1 design contracts",
+  "$defs": {
+    "Id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "Revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "Utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "Error": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "retryable": {
+          "type": "boolean"
+        },
+        "correlation_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "current_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "blocking_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable",
+        "correlation_id"
+      ]
+    },
+    "Criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "titles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "maxItems": 20
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "maxItems": 20
+        },
+        "conditions": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "field": {
+                "enum": [
+                  "work_mode",
+                  "experience",
+                  "employment_type",
+                  "posting_age_days",
+                  "company_include",
+                  "company_exclude",
+                  "salary"
+                ]
+              },
+              "mode": {
+                "enum": [
+                  "MUST",
+                  "PREFERENCE"
+                ]
+              },
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 150
+                },
+                "minItems": 1,
+                "maxItems": 50
+              }
+            },
+            "required": [
+              "field",
+              "mode",
+              "values"
+            ]
+          }
+        }
+      },
+      "required": [
+        "titles",
+        "locations",
+        "conditions"
+      ]
+    },
+    "CreateTask": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "account_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "criteria": {
+          "$ref": "#/$defs/Criteria"
+        }
+      },
+      "required": [
+        "command_id",
+        "account_id",
+        "instruction",
+        "criteria"
+      ]
+    },
+    "TaskCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "operation": {
+          "enum": [
+            "start",
+            "pause",
+            "resume",
+            "stop",
+            "restart"
+          ]
+        }
+      },
+      "required": [
+        "command_id",
+        "expected_revision",
+        "operation"
+      ]
+    },
+    "GlobalCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "operation": {
+          "enum": [
+            "pause_all",
+            "resume_all",
+            "quit"
+          ]
+        }
+      },
+      "required": [
+        "command_id",
+        "expected_revision",
+        "operation"
+      ]
+    },
+    "ApprovalCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "operation": {
+          "enum": [
+            "approve",
+            "reject"
+          ]
+        },
+        "payload_version": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "action_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "payload_version": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "required": [
+              "action_id",
+              "payload_version"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 100
+        },
+        "expires_at": {
+          "$ref": "#/$defs/Utc"
+        }
+      },
+      "required": [
+        "command_id",
+        "expected_revision",
+        "operation",
+        "payload_version",
+        "members"
+      ]
+    },
+    "FactCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "operation": {
+          "enum": [
+            "propose",
+            "verify",
+            "mark_stale",
+            "reject"
+          ]
+        },
+        "field_key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "source_version": {
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "command_id",
+        "operation",
+        "field_key",
+        "value"
+      ]
+    },
+    "Policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "account_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "action_kinds": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "submit_application",
+              "discover_jobs",
+              "prepare_application"
+            ]
+          },
+          "minItems": 1
+        },
+        "domains": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "www.linkedin.com"
+            ]
+          },
+          "minItems": 1
+        },
+        "tab_scope": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "minItems": 1
+        },
+        "expires_at": {
+          "$ref": "#/$defs/Utc"
+        },
+        "run_cap": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "daily_cap": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "budget_micro_usd": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "command_id",
+        "account_id",
+        "action_kinds",
+        "domains",
+        "tab_scope",
+        "expires_at",
+        "run_cap",
+        "daily_cap",
+        "timezone",
+        "budget_micro_usd"
+      ]
+    },
+    "ManualOutcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "operation": {
+          "enum": [
+            "continue_manually",
+            "mark_submitted",
+            "mark_not_submitted",
+            "leave_unresolved"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "command_id",
+        "expected_revision",
+        "operation"
+      ]
+    },
+    "Receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "accepted": {
+          "type": "boolean"
+        },
+        "entity_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "state": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "blocking_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      },
+      "required": [
+        "command_id",
+        "accepted",
+        "entity_id",
+        "revision",
+        "state",
+        "blocking_reasons"
+      ]
+    },
+    "TaskSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "run_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uuid"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "state": {
+          "enum": [
+            "DRAFT",
+            "QUEUED",
+            "ACTIVE",
+            "AWAITING_INPUT",
+            "BLOCKED",
+            "PAUSED",
+            "STOPPED",
+            "COMPLETED"
+          ]
+        },
+        "individual_hold": {
+          "type": "boolean"
+        },
+        "global_hold": {
+          "type": "boolean"
+        },
+        "blocking_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      },
+      "required": [
+        "task_id",
+        "run_id",
+        "revision",
+        "state",
+        "individual_hold",
+        "global_hold",
+        "blocking_reasons"
+      ]
+    },
+    "Event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cursor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "event_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "occurred_at": {
+          "$ref": "#/$defs/Utc"
+        },
+        "entity_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "entity_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "type": "string",
+              "maxLength": 40
+            },
+            "message": {
+              "type": "string",
+              "maxLength": 250
+            }
+          },
+          "required": []
+        }
+      },
+      "required": [
+        "cursor",
+        "event_id",
+        "occurred_at",
+        "entity_type",
+        "entity_id",
+        "revision",
+        "kind",
+        "summary"
+      ]
+    },
+    "LeaseAcquire": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "worker_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "wait_seconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        }
+      },
+      "required": [
+        "command_id",
+        "worker_id",
+        "generation",
+        "wait_seconds"
+      ]
+    },
+    "Heartbeat": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "worker_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "lease_id": {
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "worker_id",
+        "generation",
+        "lease_id"
+      ]
+    },
+    "DraftOutput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "answers": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "field_key": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "answer": {
+                "type": "string",
+                "maxLength": 5000
+              },
+              "fact_version_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "maxItems": 100
+              },
+              "needs_input": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 300
+              }
+            },
+            "required": [
+              "field_key",
+              "answer",
+              "fact_version_ids",
+              "needs_input",
+              "reason"
+            ]
+          }
+        }
+      },
+      "required": [
+        "answers"
+      ]
+    },
+    "ActionProposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "lease_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "run_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "logical_step_key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "application_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "payload_version": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "draft_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "kind": {
+          "enum": [
+            "submit_application",
+            "fill_fields",
+            "advance_step",
+            "attach_document",
+            "discover_jobs"
+          ]
+        }
+      },
+      "required": [
+        "command_id",
+        "lease_id",
+        "generation",
+        "run_id",
+        "logical_step_key",
+        "application_id",
+        "payload_version",
+        "draft_id",
+        "kind"
+      ]
+    },
+    "BrowserAction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "protocol_version": {
+          "const": 1
+        },
+        "action_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "run_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "account_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "tab_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "allowed_origin": {
+          "const": "https://www.linkedin.com"
+        },
+        "payload_version": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expires_at": {
+          "$ref": "#/$defs/Utc"
+        },
+        "tool": {
+          "enum": [
+            "inspect_context",
+            "discover_jobs",
+            "inspect_form",
+            "fill_fields",
+            "attach_document",
+            "advance_step",
+            "submit_application",
+            "inspect_outcome"
+          ]
+        },
+        "adapter_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "form_fingerprint": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "arguments": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "field_values": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "field_key": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                  },
+                  "value": {
+                    "type": "string",
+                    "maxLength": 5000
+                  }
+                },
+                "required": [
+                  "field_key",
+                  "value"
+                ]
+              },
+              "maxItems": 100
+            },
+            "document_capability": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "expected_step": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            },
+            "query": {
+              "$ref": "#/$defs/Criteria"
+            },
+            "existing_action_id": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "required": []
+        }
+      },
+      "required": [
+        "protocol_version",
+        "action_id",
+        "run_id",
+        "generation",
+        "account_id",
+        "tab_id",
+        "allowed_origin",
+        "payload_version",
+        "expires_at",
+        "tool",
+        "adapter_id",
+        "arguments"
+      ]
+    },
+    "BrowserOutcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "action_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "outcome": {
+          "enum": [
+            "RECEIVED",
+            "CONFIRMED",
+            "FAILED",
+            "UNCERTAIN",
+            "UNSUPPORTED_VARIANT"
+          ]
+        },
+        "not_submitted_proven": {
+          "type": "boolean"
+        },
+        "observed_at": {
+          "$ref": "#/$defs/Utc"
+        },
+        "job_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "form_fingerprint": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "STATUS_TEXT",
+                  "VALIDATION_ERROR",
+                  "APPLIED_STATE",
+                  "SCREENSHOT_REF"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ]
+          }
+        }
+      },
+      "required": [
+        "action_id",
+        "generation",
+        "outcome",
+        "not_submitted_proven",
+        "observed_at",
+        "job_id",
+        "form_fingerprint",
+        "evidence"
+      ]
+    },
+    "PrivacyCommand": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "operation": {
+          "enum": [
+            "export_preview",
+            "export_confirm",
+            "delete_preview",
+            "delete_confirm",
+            "restore_preview",
+            "restore_confirm"
+          ]
+        },
+        "subject_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "minItems": 1,
+          "maxItems": 1000
+        },
+        "preview_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "expected_revision": {
+          "$ref": "#/$defs/Revision"
+        },
+        "encrypted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "command_id",
+        "operation",
+        "subject_ids"
+      ]
+    },
+    "CheckpointPut": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "run_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "namespace": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "checkpoint_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "parent_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checkpoint_json": {
+          "type": "string",
+          "maxLength": 1048576
+        },
+        "metadata_json": {
+          "type": "string",
+          "maxLength": 65536
+        },
+        "new_versions_json": {
+          "type": "string",
+          "maxLength": 65536
+        }
+      },
+      "required": [
+        "command_id",
+        "run_id",
+        "generation",
+        "namespace",
+        "checkpoint_id",
+        "parent_id",
+        "checkpoint_json",
+        "metadata_json",
+        "new_versions_json"
+      ]
+    },
+    "CheckpointWrites": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "run_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "namespace": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "checkpoint_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "task_path": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "writes": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "index": {
+                "type": "integer"
+              },
+              "channel": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "value_json": {
+                "type": "string",
+                "maxLength": 1048576
+              }
+            },
+            "required": [
+              "index",
+              "channel",
+              "value_json"
+            ]
+          }
+        }
+      },
+      "required": [
+        "command_id",
+        "run_id",
+        "generation",
+        "namespace",
+        "checkpoint_id",
+        "task_id",
+        "task_path",
+        "writes"
+      ]
+    },
+    "WorkAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "lease": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "lease_id": {
+                  "$ref": "#/$defs/Id"
+                },
+                "run_id": {
+                  "$ref": "#/$defs/Id"
+                },
+                "worker_id": {
+                  "$ref": "#/$defs/Id"
+                },
+                "generation": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "expires_at": {
+                  "$ref": "#/$defs/Utc"
+                },
+                "work_kind": {
+                  "enum": [
+                    "DISCOVER",
+                    "PREPARE",
+                    "RECONCILE"
+                  ]
+                }
+              },
+              "required": [
+                "lease_id",
+                "run_id",
+                "worker_id",
+                "generation",
+                "expires_at",
+                "work_kind"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "available",
+        "lease"
+      ]
+    },
+    "HeartbeatResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lease_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "generation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "expires_at": {
+          "$ref": "#/$defs/Utc"
+        },
+        "fenced": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "lease_id",
+        "generation",
+        "expires_at",
+        "fenced"
+      ]
+    },
+    "CheckpointConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "thread_id": {
+          "$ref": "#/$defs/Id"
+        },
+        "checkpoint_ns": {
+          "type": "string"
+        },
+        "checkpoint_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "thread_id",
+        "checkpoint_ns",
+        "checkpoint_id"
+      ]
+    },
+    "CheckpointWriteResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "checkpoint_id": {
+          "type": "string"
+        },
+        "accepted_writes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "checkpoint_id",
+        "accepted_writes"
+      ]
+    }
+  }
+}

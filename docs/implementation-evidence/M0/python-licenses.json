@@ -1,0 +1,2666 @@
+[
+  {
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license": "MIT",
+    "classifiers": [
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.4",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Scientific/Engineering :: Mathematics",
+      "Topic :: Scientific/Engineering :: Visualization"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\altgraph-altgraph-0.17.5.dist-info_LICENSE",
+        "sha256": "6c194d6db0c64d45535d10c95142b9b0cda7b7dcc7f1ddee302b3d536f3dbe46"
+      }
+    ]
+  },
+  {
+    "name": "annotated-doc",
+    "version": "0.0.5",
+    "license": "MIT",
+    "classifiers": [
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python",
+      "Topic :: Internet",
+      "Topic :: Software Development :: Libraries :: Application Frameworks",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development",
+      "Typing :: Typed",
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\annotated-doc-annotated_doc-0.0.5.dist-info_licenses_LICENSE",
+        "sha256": "fff170779a6acbf65abdb405c087f1cee1786691e4a96a4034517e4a504a0cdf"
+      }
+    ]
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Environment :: Console",
+      "Environment :: MacOS X",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: Unix",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\annotated-types-annotated_types-0.8.0.dist-info_licenses_LICENSE",
+        "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+      }
+    ]
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Framework :: AnyIO",
+      "Typing :: Typed",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Free Threading :: 2 - Beta"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\anyio-anyio-4.15.1.dist-info_licenses_LICENSE",
+        "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+      }
+    ]
+  },
+  {
+    "name": "argcomplete",
+    "version": "3.7.2",
+    "license": "Apache Software License",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: POSIX",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: System :: Shells",
+      "Topic :: Terminals"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\argcomplete-argcomplete-3.7.2.dist-info_licenses_LICENSE.rst",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\argcomplete-argcomplete-3.7.2.dist-info_licenses_NOTICE",
+        "sha256": "2c889c721ec8ae6d7664680afaefbb4c7620976f434b57a506ecd92f0649b6a0"
+      }
+    ]
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\attrs-attrs-26.1.0.dist-info_licenses_LICENSE",
+        "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+      }
+    ]
+  },
+  {
+    "name": "black",
+    "version": "26.5.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Software Development :: Quality Assurance"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\black-black-26.5.1.dist-info_licenses_LICENSE",
+        "sha256": "5d025205be1cac55de08ebd9f961ec7d74d0f998f65f17856ddd227a7d3bf333"
+      }
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+      "Natural Language :: English",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\certifi-certifi-2026.7.22.dist-info_licenses_LICENSE",
+        "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+      }
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "classifiers": [
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Free Threading :: 2 - Beta",
+      "Programming Language :: Python :: Implementation :: CPython"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\cffi-cffi-2.1.1.dist-info_licenses_LICENSE",
+        "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+      }
+    ]
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+      "Environment :: WebAssembly",
+      "Environment :: WebAssembly :: Emscripten",
+      "Topic :: Text Processing :: Linguistic",
+      "Topic :: Utilities",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\charset-normalizer-charset_normalizer-3.5.1.dist-info_licenses_LICENSE",
+        "sha256": "18577485d3704f1a479ded8e573c0976cfed315fd2fd17983fa988da4c2f70d1"
+      }
+    ]
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\click-click-8.5.0.dist-info_licenses_LICENSE.txt",
+        "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+      }
+    ]
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Terminals"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\colorama-colorama-0.4.6.dist-info_licenses_LICENSE.txt",
+        "sha256": "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+      }
+    ]
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.1",
+    "license": "Apache-2.0 OR BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Natural Language :: English",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: POSIX",
+      "Operating System :: POSIX :: BSD",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: Microsoft :: Windows",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: Free Threading :: 3 - Stable",
+      "Topic :: Security :: Cryptography"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\cryptography-cryptography-50.0.1.dist-info_licenses_LICENSE",
+        "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\cryptography-cryptography-50.0.1.dist-info_licenses_LICENSE.APACHE",
+        "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\cryptography-cryptography-50.0.1.dist-info_licenses_LICENSE.BSD",
+        "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+      }
+    ]
+  },
+  {
+    "name": "datamodel-code-generator",
+    "version": "0.76.2",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "License :: OSI Approved :: MIT License",
+      "Natural Language :: English",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\datamodel-code-generator-datamodel_code_generator-0.76.2.dist-info_licenses_LICENSE",
+        "sha256": "2b9e0bc1cebf8ddbb272ccbca051634047924ae122aaf5488c21885ce327b934"
+      }
+    ]
+  },
+  {
+    "name": "defusedxml",
+    "version": "0.7.1",
+    "license": "PSFL",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Python Software Foundation License",
+      "Natural Language :: English",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Text Processing :: Markup :: XML"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\defusedxml-defusedxml-0.7.1.dist-info_LICENSE",
+        "sha256": "b80ce9da8c42a1f91079627fbbe2bf27210ae108a0ffe5f077d5b08e076c24c8"
+      }
+    ]
+  },
+  {
+    "name": "distro",
+    "version": "1.9.0",
+    "license": "Apache License, Version 2.0",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: Apache Software License",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: POSIX :: BSD",
+      "Operating System :: POSIX :: BSD :: FreeBSD",
+      "Operating System :: POSIX :: BSD :: NetBSD",
+      "Operating System :: POSIX :: BSD :: OpenBSD",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: System :: Operating System"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\distro-distro-1.9.0.dist-info_LICENSE",
+        "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+      }
+    ]
+  },
+  {
+    "name": "fastapi",
+    "version": "0.141.1",
+    "license": "MIT",
+    "classifiers": [
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python",
+      "Topic :: Internet",
+      "Topic :: Software Development :: Libraries :: Application Frameworks",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development",
+      "Typing :: Typed",
+      "Development Status :: 4 - Beta",
+      "Environment :: Web Environment",
+      "Framework :: AsyncIO",
+      "Framework :: FastAPI",
+      "Framework :: Pydantic",
+      "Framework :: Pydantic :: 2",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\fastapi-fastapi-0.141.1.dist-info_licenses_LICENSE",
+        "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+      }
+    ]
+  },
+  {
+    "name": "fonttools",
+    "version": "4.64.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Environment :: Other Environment",
+      "Intended Audience :: Developers",
+      "Intended Audience :: End Users/Desktop",
+      "Natural Language :: English",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3",
+      "Topic :: Text Processing :: Fonts",
+      "Topic :: Multimedia :: Graphics",
+      "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\fonttools-fonttools-4.64.0.dist-info_licenses_LICENSE",
+        "sha256": "22bef80697ecfaa17f97e62b9a26dfa12820be05583e8dd12ad169b241274c99"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\fonttools-fonttools-4.64.0.dist-info_licenses_LICENSE.external",
+        "sha256": "b082a5f86775b2641f01bccb8b9c82908481de5f502bb254b1e13bfc2a9f303d"
+      }
+    ]
+  },
+  {
+    "name": "fpdf2",
+    "version": "2.8.8",
+    "license": "LGPL-3.0-only",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Operating System :: OS Independent",
+      "Topic :: Printing",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Text Processing :: Markup",
+      "Topic :: Multimedia :: Graphics",
+      "Topic :: Multimedia :: Graphics :: Presentation"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\fpdf2-fpdf2-2.8.8.dist-info_licenses_LICENSE",
+        "sha256": "f97bc4bb9b7ae8a653941073678b5c7775e8de44a01c3bcc21e7cdc148b90e61"
+      }
+    ]
+  },
+  {
+    "name": "genson",
+    "version": "1.4.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Natural Language :: English",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: File Formats :: JSON :: JSON Schema",
+      "Topic :: Software Development :: Code Generators",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\genson-genson-1.4.0.dist-info_licenses_AUTHORS.rst",
+        "sha256": "f1c6b0af1a57f0d2311cd862a39ea0c9b32aa3de90e20dfaeb3722f3b435c0f7"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\genson-genson-1.4.0.dist-info_licenses_LICENSE",
+        "sha256": "d049388552adb1f2a94d728998b1256dac1aab7620b67157274d474891ae739a"
+      }
+    ]
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Topic :: Internet :: WWW/HTTP",
+      "Topic :: System :: Networking"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\h11-h11-0.16.0.dist-info_licenses_LICENSE.txt",
+        "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+      }
+    ]
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Environment :: Web Environment",
+      "Framework :: AsyncIO",
+      "Framework :: Trio",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\httpcore-httpcore-1.0.9.dist-info_licenses_LICENSE.md",
+        "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+      }
+    ]
+  },
+  {
+    "name": "httpcore2",
+    "version": "2.12.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Framework :: AnyIO",
+      "Framework :: AsyncIO",
+      "Framework :: Trio",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\httpcore2-httpcore2-2.12.0.dist-info_licenses_LICENSE.md",
+        "sha256": "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9"
+      }
+    ]
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Environment :: Web Environment",
+      "Framework :: AsyncIO",
+      "Framework :: Trio",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\httpx-httpx-0.28.1.dist-info_licenses_LICENSE.md",
+        "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+      }
+    ]
+  },
+  {
+    "name": "httpx2",
+    "version": "2.12.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Framework :: AnyIO",
+      "Framework :: AsyncIO",
+      "Framework :: Trio",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\httpx2-httpx2-2.12.0.dist-info_licenses_LICENSE.md",
+        "sha256": "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30"
+      }
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.19",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Internet :: Name Service (DNS)",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\idna-idna-3.19.dist-info_licenses_LICENSE.md",
+        "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+      }
+    ]
+  },
+  {
+    "name": "inflect",
+    "version": "7.5.0",
+    "license": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Natural Language :: English",
+      "Operating System :: OS Independent",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Text Processing :: Linguistic"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\inflect-inflect-7.5.0.dist-info_LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      }
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\iniconfig-iniconfig-2.3.0.dist-info_licenses_LICENSE",
+        "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+      }
+    ]
+  },
+  {
+    "name": "isort",
+    "version": "8.0.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Natural Language :: English",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\isort-isort-8.0.1.dist-info_licenses_LICENSE",
+        "sha256": "063294001c3d523dbacbab9dd54ac229982756ccaf592ca53240b2b0cdd82065"
+      }
+    ]
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "license": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+      "Topic :: Text Processing :: Markup :: HTML",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\Jinja2-jinja2-3.1.6.dist-info_licenses_LICENSE.txt",
+        "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+      }
+    ]
+  },
+  {
+    "name": "jsonpatch",
+    "version": "1.33",
+    "license": "Modified BSD License",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonpatch-jsonpatch-1.33.dist-info_LICENSE",
+        "sha256": "4393eb6733fa1e367f41769b382f4f1be7bf0daeb1e243ed92b3f5d8bafd236f"
+      }
+    ]
+  },
+  {
+    "name": "jsonpointer",
+    "version": "3.1.1",
+    "license": "Modified BSD License",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonpointer-jsonpointer-3.1.1.dist-info_licenses_AUTHORS",
+        "sha256": "4d58319d0f59c87bef5b07b3fe4db0f19c2d7d5545b034c6bf7b57c89bbef57f"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonpointer-jsonpointer-3.1.1.dist-info_licenses_LICENSE.txt",
+        "sha256": "d8b24f15d472885f788a2d6e985850f264627b86012a17bb242c83f310d907e5"
+      }
+    ]
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: File Formats :: JSON",
+      "Topic :: File Formats :: JSON :: JSON Schema"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonschema-jsonschema-4.26.0.dist-info_licenses_COPYING",
+        "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+      }
+    ]
+  },
+  {
+    "name": "jsonschema-path",
+    "version": "0.5.0",
+    "license": "Apache-2.0",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonschema-path-jsonschema_path-0.5.0.dist-info_licenses_LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: File Formats :: JSON",
+      "Topic :: File Formats :: JSON :: JSON Schema"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\jsonschema-specifications-jsonschema_specifications-2025.9.1.dist-info_licenses_COPYING",
+        "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+      }
+    ]
+  },
+  {
+    "name": "langchain-core",
+    "version": "1.6.2",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Scientific/Engineering :: Artificial Intelligence",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langchain-core-langchain_core-1.6.2.dist-info_licenses_LICENSE",
+        "sha256": "4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478"
+      }
+    ]
+  },
+  {
+    "name": "langchain-protocol",
+    "version": "0.0.19",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Scientific/Engineering :: Artificial Intelligence",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langchain-protocol-langchain_protocol-0.0.19.dist-info_licenses_LICENSE",
+        "sha256": "893e6e30275896912c21c77f9f7c112aba85fd985d05b26a29424cf7e511d177"
+      }
+    ]
+  },
+  {
+    "name": "langgraph",
+    "version": "1.2.10",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langgraph-langgraph-1.2.10.dist-info_licenses_LICENSE",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      }
+    ]
+  },
+  {
+    "name": "langgraph-checkpoint",
+    "version": "4.2.0",
+    "license": "MIT",
+    "classifiers": [],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langgraph-checkpoint-langgraph_checkpoint-4.2.0.dist-info_licenses_LICENSE",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      }
+    ]
+  },
+  {
+    "name": "langgraph-prebuilt",
+    "version": "1.1.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langgraph-prebuilt-langgraph_prebuilt-1.1.0.dist-info_licenses_LICENSE",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      }
+    ]
+  },
+  {
+    "name": "langgraph-sdk",
+    "version": "0.4.4",
+    "license": "MIT",
+    "classifiers": [],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\langgraph-sdk-langgraph_sdk-0.4.4.dist-info_licenses_LICENSE",
+        "sha256": "d9bb52f2e3540d60ff50d8f0f5b6ba649b7fd346948c4c3d086c8afb120763c7"
+      }
+    ]
+  },
+  {
+    "name": "langsmith",
+    "version": "0.12.2",
+    "license": "MIT",
+    "classifiers": [],
+    "license_files": []
+  },
+  {
+    "name": "lazy-object-proxy",
+    "version": "1.12.0",
+    "license": "BSD-2-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: Unix",
+      "Operating System :: POSIX",
+      "Operating System :: Microsoft :: Windows",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\lazy-object-proxy-lazy_object_proxy-1.12.0.dist-info_licenses_LICENSE",
+        "sha256": "7841d6c02b8cd06441925c6770f62c76aa468d2c386e6692d84b4a579ee91d32"
+      }
+    ]
+  },
+  {
+    "name": "lxml",
+    "version": "6.1.3",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Programming Language :: Cython",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: C",
+      "Operating System :: OS Independent",
+      "Topic :: Text Processing :: Markup :: HTML",
+      "Topic :: Text Processing :: Markup :: XML",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\lxml-lxml-6.1.3.dist-info_licenses_LICENSE.txt",
+        "sha256": "e7c3ce8d76331b0101cc46790ab43958ea90a364bcf962ed8763d5a818340e69"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\lxml-lxml-6.1.3.dist-info_licenses_LICENSES.txt",
+        "sha256": "df682c668de65321677b5e4861dca4128a8bad8067f230956e9da3f985b3d398"
+      }
+    ]
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.3",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+      "Topic :: Text Processing :: Markup :: HTML",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\MarkupSafe-markupsafe-3.0.3.dist-info_licenses_LICENSE.txt",
+        "sha256": "4631ec0db5fd90a547e336817264c6798214338146f8ac94b4a57f96ee8c9ec4"
+      }
+    ]
+  },
+  {
+    "name": "more-itertools",
+    "version": "11.1.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Natural Language :: English",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\more-itertools-more_itertools-11.1.0.dist-info_licenses_LICENSE",
+        "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+      }
+    ]
+  },
+  {
+    "name": "mypy_extensions",
+    "version": "1.1.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Topic :: Software Development"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\mypy_extensions-mypy_extensions-1.1.0.dist-info_licenses_LICENSE",
+        "sha256": "a50450da1d53cd777b80ced77c58ff96abe0ccd879706bd142c3ec20e245f0b4"
+      }
+    ]
+  },
+  {
+    "name": "openapi-schema-validator",
+    "version": "0.9.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: BSD License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\openapi-schema-validator-openapi_schema_validator-0.9.0.dist-info_licenses_LICENSE",
+        "sha256": "d41b4164b6368056255ae4d17e982176fe243808322d1469a3443dee58d1530a"
+      }
+    ]
+  },
+  {
+    "name": "openapi-spec-validator",
+    "version": "0.9.0",
+    "license": "Apache-2.0",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\openapi-spec-validator-openapi_spec_validator-0.9.0.dist-info_licenses_LICENSE",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\openapi-spec-validator-openapi_spec_validator-0.9.0.dist-info_licenses_NOTICE",
+        "sha256": "e66e45d437e7b6198772bae62b3a5f5c18ca14878d20a6ab4cae21be433b6df0"
+      }
+    ]
+  },
+  {
+    "name": "orjson",
+    "version": "3.12.0",
+    "license": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "License :: OSI Approved :: MIT License",
+      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+      "Operating System :: MacOS",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python",
+      "Programming Language :: Rust",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\orjson-orjson-3.12.0.dist-info_licenses_LICENSE-APACHE",
+        "sha256": "7cfd738c53d61c79f07e348f622bf7707c9084237054d37fbe07788a75f5881c"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\orjson-orjson-3.12.0.dist-info_licenses_LICENSE-MIT",
+        "sha256": "36516aefdc84c5d5a1e7485425913a22dbda69eb1930c5e84d6ae4972b5194b9"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\orjson-orjson-3.12.0.dist-info_licenses_LICENSE-MPL-2.0",
+        "sha256": "9303ea1cfbf049945652668089d753fb1a7e1f2e52c680615c3d2cea7515c118"
+      }
+    ]
+  },
+  {
+    "name": "ormsgpack",
+    "version": "1.12.2",
+    "license": "Apache-2.0 OR MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: MacOS",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: GraalPy",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python",
+      "Programming Language :: Rust",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\ormsgpack-ormsgpack-1.12.2.dist-info_licenses_LICENSE-APACHE",
+        "sha256": "7cfd738c53d61c79f07e348f622bf7707c9084237054d37fbe07788a75f5881c"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\ormsgpack-ormsgpack-1.12.2.dist-info_licenses_LICENSE-MIT",
+        "sha256": "36516aefdc84c5d5a1e7485425913a22dbda69eb1930c5e84d6ae4972b5194b9"
+      }
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\packaging-packaging-26.3.dist-info_licenses_LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\packaging-packaging-26.3.dist-info_licenses_LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\packaging-packaging-26.3.dist-info_licenses_LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      }
+    ]
+  },
+  {
+    "name": "pathable",
+    "version": "0.6.0",
+    "license": "Apache-2.0",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pathable-pathable-0.6.0.dist-info_licenses_LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ]
+  },
+  {
+    "name": "pathspec",
+    "version": "1.1.1",
+    "license": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pathspec-pathspec-1.1.1.dist-info_licenses_LICENSE",
+        "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+      }
+    ]
+  },
+  {
+    "name": "pefile",
+    "version": "2024.8.26",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Science/Research",
+      "Natural Language :: English",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pefile-pefile-2024.8.26.dist-info_LICENSE",
+        "sha256": "b44409c067c6da52bfb54bb6624fb11a7b52157c3a13ae1400232f8196e86ad3"
+      }
+    ]
+  },
+  {
+    "name": "pillow",
+    "version": "12.3.0",
+    "license": "MIT-CMU",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Multimedia :: Graphics",
+      "Topic :: Multimedia :: Graphics :: Capture :: Digital Camera",
+      "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture",
+      "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+      "Topic :: Multimedia :: Graphics :: Viewers",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pillow-pillow-12.3.0.dist-info_licenses_LICENSE",
+        "sha256": "4f7866a74802c6326f81faff59a56546b6aec2b10b91973e0e9308de95e79857"
+      }
+    ]
+  },
+  {
+    "name": "platformdirs",
+    "version": "4.11.7",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\platformdirs-platformdirs-4.11.7.dist-info_licenses_LICENSE",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+      }
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: MacOS :: MacOS X",
+      "Topic :: Software Development :: Testing",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pluggy-pluggy-1.6.0.dist-info_licenses_LICENSE",
+        "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+      }
+    ]
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pycparser-pycparser-3.0.dist-info_licenses_LICENSE",
+        "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1"
+      }
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.5",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Framework :: Hypothesis",
+      "Framework :: Pydantic",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Internet",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pydantic-pydantic-2.13.5.dist-info_licenses_LICENSE",
+        "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+      }
+    ]
+  },
+  {
+    "name": "pydantic-settings",
+    "version": "2.15.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Environment :: MacOS X",
+      "Framework :: Pydantic",
+      "Framework :: Pydantic :: 2",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: Unix",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Internet",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pydantic-settings-pydantic_settings-2.15.0.dist-info_licenses_LICENSE",
+        "sha256": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
+      }
+    ]
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.5",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: Implementation :: GraalPy",
+      "Programming Language :: Rust",
+      "Framework :: Pydantic",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Information Technology",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: MacOS",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pydantic_core-pydantic_core-2.46.5.dist-info_licenses_LICENSE",
+        "sha256": "fbe7f615f18d135c07000e5a86325db27f42c7729699ef166ac1f7a3f4586bf4"
+      }
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Intended Audience :: Developers",
+      "Intended Audience :: End Users/Desktop",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Text Processing :: Filters",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\Pygments-pygments-2.21.0.dist-info_licenses_AUTHORS",
+        "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\Pygments-pygments-2.21.0.dist-info_licenses_LICENSE",
+        "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+      }
+    ]
+  },
+  {
+    "name": "pyinstaller",
+    "version": "6.22.2",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Intended Audience :: Other Audience",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+      "Natural Language :: English",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX",
+      "Operating System :: POSIX :: AIX",
+      "Operating System :: POSIX :: BSD",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: POSIX :: SunOS/Solaris",
+      "Programming Language :: C",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Build Tools",
+      "Topic :: Software Development :: Interpreters",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: System :: Installation/Setup",
+      "Topic :: System :: Software Distribution",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pyinstaller-pyinstaller-6.22.2.dist-info_licenses_COPYING.txt",
+        "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+      }
+    ]
+  },
+  {
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.7",
+    "license": null,
+    "classifiers": [
+      "Intended Audience :: Developers",
+      "Topic :: Software Development :: Build Tools",
+      "License :: OSI Approved :: Apache Software License",
+      "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+      "Natural Language :: English",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pyinstaller-hooks-contrib-pyinstaller_hooks_contrib-2026.7.dist-info_licenses_LICENSE",
+        "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0"
+      }
+    ]
+  },
+  {
+    "name": "pypdf",
+    "version": "6.18.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Operating System :: OS Independent",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pypdf-pypdf-6.18.0.dist-info_licenses_LICENSE",
+        "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524"
+      }
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Intended Audience :: Developers",
+      "Operating System :: MacOS",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX",
+      "Operating System :: Unix",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Testing",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pytest-pytest-9.1.1.dist-info_licenses_LICENSE",
+        "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+      }
+    ]
+  },
+  {
+    "name": "python-docx",
+    "version": "1.2.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Topic :: Office/Business :: Office Suites",
+      "Topic :: Software Development :: Libraries"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\python-docx-python_docx-1.2.0.dist-info_licenses_LICENSE",
+        "sha256": "7652f271e46d0d533e9dc463f3b5fcbdcacf4d6a9c8d6b554d15efd0f37f6132"
+      }
+    ]
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.3",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Intended Audience :: Developers",
+      "Intended Audience :: System Administrators",
+      "Operating System :: OS Independent",
+      "Topic :: System :: Systems Administration",
+      "Topic :: Utilities",
+      "Environment :: Web Environment"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\python-dotenv-python_dotenv-1.2.3.dist-info_licenses_LICENSE",
+        "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+      }
+    ]
+  },
+  {
+    "name": "pytokens",
+    "version": "0.4.1",
+    "license": "MIT License\n\nCopyright (c) 2024 Tushar Sadhwani\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "classifiers": [
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pytokens-pytokens-0.4.1.dist-info_licenses_LICENSE",
+        "sha256": "b0a95b0c0192406478bc99ac7e274af01c55be0db2e64137cfe971cd7bb7e7c3"
+      }
+    ]
+  },
+  {
+    "name": "pywin32",
+    "version": "312",
+    "license": "PSF",
+    "classifiers": [
+      "Environment :: Win32 (MS Windows)",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Python Software Foundation License",
+      "Development Status :: 5 - Production/Stable",
+      "Operating System :: Microsoft :: Windows",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_adodbapi_license.txt",
+        "sha256": "5ea2f23c7f00c3006bacf267183e816d8d4b6dc95ea57a4ddb0ff81de6d8719e"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_com_License.txt",
+        "sha256": "fad39c18fc3825fa278db1c86fd52cf88d7c525b3c2fbf7817fa383cbae4d423"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_com_win32comext_mapi_src_MAPIStubLibrary_LICENSE",
+        "sha256": "1c4cf44d2fb8bf2d10214d6da80cc9e05502824cc4460f35be4c7bcb4cde53da"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_isapi_README.txt",
+        "sha256": "41383bcc95edb8138d37077ae54bfdcbd2a3b77bf745a8529a9c161146e22303"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_pythonwin_License.txt",
+        "sha256": "a74d826efb242db087b850348e20abbfd591b51e2081f2048735290913872924"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_pythonwin_Scintilla_License.txt",
+        "sha256": "57ec79bbeab4fd1cf7460a7ad450d2ab01471810459aeae9e75e4c66b472095f"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_pythonwin_pywin_idle_LICENSE.txt",
+        "sha256": "a0fa1e7b8a4230055685e796548ac084a6c0eea395294574093bba72efd9191b"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-pywin32-312.dist-info_licenses_win32_License.txt",
+        "sha256": "a74d826efb242db087b850348e20abbfd591b51e2081f2048735290913872924"
+      }
+    ]
+  },
+  {
+    "name": "pywin32-ctypes",
+    "version": "0.2.3",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\pywin32-ctypes-pywin32_ctypes-0.2.3.dist-info_LICENSE.txt",
+        "sha256": "dfa83b3e2709adfcdb838d9ad55823ca674abb780e60563d9dd9544ccbf785e9"
+      }
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+      "Programming Language :: Cython",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: Text Processing :: Markup"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\PyYAML-pyyaml-6.0.3.dist-info_licenses_LICENSE",
+        "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+      }
+    ]
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: File Formats :: JSON",
+      "Topic :: File Formats :: JSON :: JSON Schema"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\referencing-referencing-0.37.0.dist-info_licenses_COPYING",
+        "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+      }
+    ]
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license": "Apache-2.0",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Natural Language :: English",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Programming Language :: Python :: Free Threading :: 2 - Beta",
+      "Topic :: Internet :: WWW/HTTP",
+      "Topic :: Software Development :: Libraries"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\requests-requests-2.34.2.dist-info_licenses_LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\requests-requests-2.34.2.dist-info_licenses_NOTICE",
+        "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+      }
+    ]
+  },
+  {
+    "name": "requests-toolbelt",
+    "version": "1.0.0",
+    "license": "Apache 2.0",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "License :: OSI Approved :: Apache Software License",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.4",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\requests-toolbelt-requests_toolbelt-1.0.0.dist-info_LICENSE",
+        "sha256": "1f8cf8bdacd98ed6d36d0fec0c07f7765acebd6e81205962ab5146023b3c858d"
+      }
+    ]
+  },
+  {
+    "name": "rfc3339-validator",
+    "version": "0.1.4",
+    "license": "MIT license",
+    "classifiers": [
+      "Development Status :: 2 - Pre-Alpha",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Natural Language :: English",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
+      "Programming Language :: Python :: 3.8"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\rfc3339-validator-rfc3339_validator-0.1.4.dist-info_LICENSE",
+        "sha256": "5ba1a4f03626ccca6dcbf53a554545e4f776a335bfdaa233ec3bfe9bb7fac15d"
+      }
+    ]
+  },
+  {
+    "name": "rpds-py",
+    "version": "2026.6.3",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Rust",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\rpds-py-rpds_py-2026.6.3.dist-info_licenses_LICENSE",
+        "sha256": "8bcb72c82ea8ae74802293c41d93ad7d51434001b0ae45a603a5af0f507aee0a"
+      }
+    ]
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Topic :: System :: Archiving :: Packaging",
+      "Topic :: System :: Systems Administration",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools-84.0.0.dist-info_licenses_LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_autocommand-2.2.2.dist-info_LICENSE",
+        "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_backports.tarfile-1.2.0.dist-info_LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_importlib_metadata-8.7.1.dist-info_licenses_LICENSE",
+        "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_jaraco.text-4.0.0.dist-info_LICENSE",
+        "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_jaraco_context-6.1.0.dist-info_licenses_LICENSE",
+        "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_jaraco_functools-4.4.0.dist-info_licenses_LICENSE",
+        "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_more_itertools-10.8.0.dist-info_licenses_LICENSE",
+        "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_packaging-26.0.dist-info_licenses_LICENSE",
+        "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_packaging-26.0.dist-info_licenses_LICENSE.APACHE",
+        "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_packaging-26.0.dist-info_licenses_LICENSE.BSD",
+        "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_platformdirs-4.4.0.dist-info_licenses_LICENSE",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_tomli-2.4.0.dist-info_licenses_LICENSE",
+        "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_wheel-0.46.3.dist-info_licenses_LICENSE.txt",
+        "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\setuptools-setuptools__vendor_zipp-3.23.0.dist-info_licenses_LICENSE",
+        "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+      }
+    ]
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python :: 2",
+      "Programming Language :: Python :: 3",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\six-six-1.17.0.dist-info_LICENSE",
+        "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+      }
+    ]
+  },
+  {
+    "name": "sniffio",
+    "version": "1.3.1",
+    "license": "MIT OR Apache-2.0",
+    "classifiers": [
+      "License :: OSI Approved :: MIT License",
+      "License :: OSI Approved :: Apache Software License",
+      "Framework :: Trio",
+      "Framework :: AsyncIO",
+      "Operating System :: POSIX :: Linux",
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: Microsoft :: Windows",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Intended Audience :: Developers",
+      "Development Status :: 5 - Production/Stable"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\sniffio-sniffio-1.3.1.dist-info_LICENSE",
+        "sha256": "652c878488d1456361e08c3f8607fd7ba59892a14103d15cce4ff93c85b5cc8b"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\sniffio-sniffio-1.3.1.dist-info_LICENSE.APACHE2",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\sniffio-sniffio-1.3.1.dist-info_LICENSE.MIT",
+        "sha256": "3e6dae555eb92787fc82d1d48355677f454c7f65aeb38d3f9e72bf9a3daf034b"
+      }
+    ]
+  },
+  {
+    "name": "sqlcipher3",
+    "version": "0.6.2",
+    "license": "MIT",
+    "classifiers": [
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: C",
+      "Topic :: Database",
+      "Topic :: Database :: Database Engines/Servers",
+      "Topic :: Database :: Front-Ends",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\sqlcipher3-sqlcipher3-0.6.2.dist-info_licenses_LICENSE",
+        "sha256": "d2af98975b150bf6ff5ef99785b56b4b5979024a4ab3117253f1cd777f98bad6"
+      }
+    ]
+  },
+  {
+    "name": "starlette",
+    "version": "1.6.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Environment :: Web Environment",
+      "Framework :: AnyIO",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\starlette-starlette-1.6.0.dist-info_licenses_LICENSE.md",
+        "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+      }
+    ]
+  },
+  {
+    "name": "tenacity",
+    "version": "9.1.4",
+    "license": "Apache 2.0",
+    "classifiers": [
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Apache Software License",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Topic :: Utilities"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\tenacity-tenacity-9.1.4.dist-info_licenses_LICENSE",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      }
+    ]
+  },
+  {
+    "name": "truststore",
+    "version": "0.10.4",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Operating System :: MacOS",
+      "Operating System :: Microsoft",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\truststore-truststore-0.10.4.dist-info_licenses_LICENSE",
+        "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+      }
+    ]
+  },
+  {
+    "name": "typeguard",
+    "version": "4.6.0",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\typeguard-typeguard-4.6.0.dist-info_licenses_LICENSE",
+        "sha256": "6163f7987dfb38d6bc320ce2b70b2f02b862bc41126516d552ef1cd43247e758"
+      }
+    ]
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Topic :: Software Development :: Libraries :: Python Modules",
+      "Typing :: Typed"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\typing-inspection-typing_inspection-0.4.4.dist-info_licenses_LICENSE",
+        "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+      }
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Console",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Topic :: Software Development"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\typing_extensions-typing_extensions-4.16.0.dist-info_licenses_LICENSE",
+        "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+      }
+    ]
+  },
+  {
+    "name": "urllib3",
+    "version": "2.7.0",
+    "license": "MIT",
+    "classifiers": [
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Free Threading :: 2 - Beta",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Internet :: WWW/HTTP",
+      "Topic :: Software Development :: Libraries"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\urllib3-urllib3-2.7.0.dist-info_licenses_LICENSE.txt",
+        "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+      }
+    ]
+  },
+  {
+    "name": "uuid_utils",
+    "version": "0.17.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Rust",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\uuid_utils-uuid_utils-0.17.0.dist-info_licenses_LICENSE.md",
+        "sha256": "209330e81d3a89860e9ec79e9bf894be705f0755a3869d77aa091fc4a2f91903"
+      }
+    ]
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.52.4",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 4 - Beta",
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Implementation :: PyPy",
+      "Topic :: Internet :: WWW/HTTP"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\uvicorn-uvicorn-0.52.4.dist-info_licenses_LICENSE.md",
+        "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+      }
+    ]
+  },
+  {
+    "name": "websockets",
+    "version": "16.1.1",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Web Environment",
+      "Intended Audience :: Developers",
+      "Operating System :: OS Independent",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\websockets-websockets-16.1.1.dist-info_licenses_LICENSE",
+        "sha256": "0f44514998aca209d3482d10204a8adf2aa4296ff157a36a5c0922f2280632d3"
+      }
+    ]
+  },
+  {
+    "name": "xxhash",
+    "version": "4.0.1",
+    "license": "BSD-2-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.15",
+      "Programming Language :: Python :: Implementation :: CPython",
+      "Programming Language :: Python :: Free Threading :: 1 - Unstable"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\xxhash-xxhash-4.0.1.dist-info_licenses_LICENSE",
+        "sha256": "b76e99529f3e47372029e11914a8f4b95d6313463ed5a1a5c9afe96c3e015114"
+      }
+    ]
+  },
+  {
+    "name": "zstandard",
+    "version": "0.25.0",
+    "license": "BSD-3-Clause",
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: C",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: Free Threading :: 1 - Unstable"
+    ],
+    "license_files": [
+      {
+        "path": "docs\\implementation-evidence\\M0\\dependency-licenses\\zstandard-zstandard-0.25.0.dist-info_licenses_LICENSE",
+        "sha256": "c15b28f8866500bd3d607c739e87710aa5c47627aa30a0573948414564ff1da2"
+      }
+    ]
+  }
+]

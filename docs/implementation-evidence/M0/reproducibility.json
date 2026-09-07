@@ -1,0 +1,8 @@
+{
+  "python_contract_regeneration": "identical SHA-256 before/after",
+  "typescript_contract_regeneration": "identical SHA-256 before/after",
+  "npm_ci": "passed offline with ignore-scripts against existing lock",
+  "python_install": "uv pip sync --require-hashes passed; uv pip check compatible",
+  "approved_lld_snapshot": "all 15 manifest hashes matched",
+  "qualification_boundary": "Current Windows development host only; fresh host and distributable qualification are M7"
+}

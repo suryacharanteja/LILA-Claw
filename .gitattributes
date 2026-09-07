@@ -1,0 +1,3 @@
+# Preserve approved snapshot bytes and SQL migration equality across checkouts.
+docs/** -text
+*.sql -text

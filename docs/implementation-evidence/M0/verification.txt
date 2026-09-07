@@ -1,0 +1,114 @@
+**********************
+PowerShell transcript start
+Start time: 20260908000154
+Username: CD-G15-5530\charan
+RunAs User: CD-G15-5530\charan
+Configuration Name: 
+Machine: CD-G15-5530 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Users\charan\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+@'
+$ErrorActionPreference = 'Stop'
+Set-Location (Split-Path $PSScriptRoot -Parent)
+$python = Join-Path (Get-Location) '.venv/Scripts/python.exe'
+$priorAutoload = $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = '1'
+Start-Transcript -Path docs/implementation-evidence/M0/verification.txt -Force | Out-Null
+try {
+    & $python -m pytest -c pyproject.toml --confcutdir=tests/foundation --junitxml=docs/implementation-evidence/M0/pytest.xml
+    if ($LASTEXITCODE) { throw 'Foundation tests failed' }
+    & npm.cmd run typecheck
+    if ($LASTEXITCODE) { throw 'TypeScript validation failed' }
+    & npm.cmd run build
+    if ($LASTEXITCODE) { throw 'Web build failed' }
+} finally {
+    $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = $priorAutoload
+    Stop-Transcript | Out-Null
+}
+
+'@ | Set-Content -LiteralPath 'scripts/verify-m0.ps1' -Encoding utf8
+@'
+param(
+    [Parameter(Mandatory=$true)][string]$Python312
+)
+$ErrorActionPreference = 'Stop'
+Set-Location (Split-Path $PSScriptRoot -Parent)
+& $Python312 -c "import sys,platform; assert sys.version_info[:3] == (3,12,14) and platform.machine() == 'AMD64'"
+if ($LASTEXITCODE) { throw 'Use the qualified CPython 3.12.14 Windows x64 build' }
+& uv --cache-dir .uv-cache venv --python $Python312 .venv
+if ($LASTEXITCODE) { throw 'Environment creation failed' }
+& uv --cache-dir .uv-cache pip sync requirements.lock --python .venv/Scripts/python.exe --require-hashes
+if ($LASTEXITCODE) { throw 'Hash-locked Python install failed' }
+& npm.cmd ci --ignore-scripts --cache .npm-cache
+if ($LASTEXITCODE) { throw 'npm lock install failed' }
+
+'@ | Set-Content -LiteralPath 'scripts/setup-m0.ps1' -Encoding utf8
+@'
+import sqlite3
+import pytest
+import lila.storage.migrations as migrations
+
+def test_failed_migration_rolls_back_schema_and_version(tmp_path, monkeypatch):
+    (tmp_path / "0001_business.sql").write_text("CREATE TABLE partial(x); INVALID SQL;")
+    monkeypatch.setattr(migrations, "ROOT", tmp_path)
+    db = sqlite3.connect(":memory:")
+    with pytest.raises(sqlite3.Error):
+        migrations.apply_initial_schema(db, "business")
+    assert db.execute("PRAGMA user_version").fetchone()[0] == 0
+    assert not db.execute("SELECT name FROM sqlite_master WHERE name='partial'").fetchall()
+
+def test_store_name_cannot_select_arbitrary_file():
+    db = sqlite3.connect(":memory:")
+    with pytest.raises(ValueError):
+        migrations.apply_initial_schema(db, "../business")
+
+'@ | Set-Content -LiteralPath 'tests/foundation/test_migration_failures.py' -Encoding utf8
+@'
+# M0 license inventory review
+
+The Python distribution metadata/license files and npm lock license metadata are
+captured in python-licenses.json, dependency-licenses/ and npm-licenses.json.
+Original project LICENSE and NOTICE are retained; no legacy implementation code
+was copied into the new foundation.
+
+This is a development/build inventory, not final bundled-distribution clearance.
+The environment includes code generation, testing and packaging tools that need
+not ship in the application. PyInstaller's GPL exception and LGPL-bearing document
+dependencies require their applicable notices/conditions in the M7 distribution.
+LangSmith metadata declares MIT but its installed distribution did not include a
+license text in the scanned dist-info directory; retrieve its authoritative notice
+and determine whether it ships before release. Missing metadata fields for other
+packages are supplemented by captured license text and classifiers.
+
+M7 must derive a bundle-specific notice inventory, including Node build tools,
+native SQLCipher components, fonts and installer runtime. No stable release is
+authorized by this inventory.
+
+'@ | Set-Content -LiteralPath 'docs/implementation-evidence/M0/license-review.md' -Encoding utf8
+$beforePy = (Get-FileHash src/lila/contracts/generated_models.py).Hash
+$beforeTs = (Get-FileHash web/src/api/generated.ts).Hash
+& scripts/generate-contracts.ps1
+if ((Get-FileHash src/lila/contracts/generated_models.py).Hash -ne $beforePy -or (Get-FileHash web/src/api/generated.ts).Hash -ne $beforeTs) { throw 'Generated contracts are not reproducible' }
+npm.cmd ci --ignore-scripts --offline --no-audit --cache .npm-cache
+if ($LASTEXITCODE) { throw 'Lock reinstall failed' }
+& scripts/verify-m0.ps1
+if ($LASTEXITCODE) { throw 'M0 verification failed' }
+& .venv/Scripts/python.exe scripts/m0_evidence.py
+
+Process ID: 31644
+PSVersion: 7.6.5
+PSEdition: Core
+GitCommitId: 7.6.5
+OS: Microsoft Windows 10.0.26200
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+
+
+
+**********************
+PowerShell transcript end
+End time: 20260908000158
+**********************

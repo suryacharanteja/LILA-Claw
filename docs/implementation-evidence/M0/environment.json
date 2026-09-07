@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "node": "v22.19.0",
+  "npm": "11.10.0",
+  "requirements_sha256": "f1568554036e4fa7b9283a30ab93ac50f119cb4b17c7d2f243f8e61ecc62a6c1",
+  "package_lock_sha256": "ef78baf960175b6aaf55f9f7939731afc2a52d8f2918b14432d621fabee73dbc",
+  "python_executable_sha256": "9f91cee2e1b13d9779ab252507aeee120c379e2543ffe85f63cad129b58ba230",
+  "scope": "Development foundation; not clean-machine or release qualification"
+}

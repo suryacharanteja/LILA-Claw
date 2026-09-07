@@ -1,0 +1,679 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "LILA core mutation contracts",
+    "version": "1.0.0",
+    "description": "Core implementation contracts; transport/auth, read collections and artifact streaming defined in LLD-07."
+  },
+  "servers": [
+    {
+      "url": "https://127.0.0.1:{port}",
+      "variables": {
+        "port": {
+          "default": "43127"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/api/v1/tasks": {
+      "post": {
+        "operationId": "createTask",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/CreateTask"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tasks/{id}": {
+      "get": {
+        "operationId": "getTask",
+        "security": [
+          {
+            "uiSession": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/TaskSnapshot"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/tasks/{id}/commands": {
+      "post": {
+        "operationId": "taskCommand",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/TaskCommand"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/execution/commands": {
+      "post": {
+        "operationId": "globalCommand",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/GlobalCommand"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reviews/{id}/commands": {
+      "post": {
+        "operationId": "reviewCommand",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/ApprovalCommand"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/facts/commands": {
+      "post": {
+        "operationId": "factCommand",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/FactCommand"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/policies": {
+      "post": {
+        "operationId": "createPolicy",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/Policy"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/applications/{id}/manual-outcome": {
+      "post": {
+        "operationId": "manualOutcome",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/ManualOutcome"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/privacy/commands": {
+      "post": {
+        "operationId": "privacyCommand",
+        "security": [
+          {
+            "uiSession": [],
+            "csrf": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/PrivacyCommand"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/v1/work/acquire": {
+      "post": {
+        "operationId": "acquireWork",
+        "security": [
+          {
+            "workerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/WorkAssignment"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/LeaseAcquire"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/v1/work/{id}/heartbeat": {
+      "post": {
+        "operationId": "heartbeat",
+        "security": [
+          {
+            "workerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/HeartbeatResult"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/Heartbeat"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ]
+      }
+    },
+    "/internal/v1/proposals": {
+      "post": {
+        "operationId": "proposeAction",
+        "security": [
+          {
+            "workerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Receipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/ActionProposal"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/v1/checkpoints": {
+      "post": {
+        "operationId": "putCheckpoint",
+        "security": [
+          {
+            "workerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/CheckpointConfig"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/CheckpointPut"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/v1/checkpoints/writes": {
+      "post": {
+        "operationId": "putWrites",
+        "security": [
+          {
+            "workerToken": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persisted receipt or authorized snapshot; not proof of external success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/CheckpointWriteResult"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Structured error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./protocol-v1.schema.json#/$defs/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "./protocol-v1.schema.json#/$defs/CheckpointWrites"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "uiSession": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-lila-session"
+      },
+      "csrf": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Lila-CSRF"
+      },
+      "workerToken": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

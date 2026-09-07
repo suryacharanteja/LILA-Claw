@@ -1,0 +1,31 @@
+__pycache__
+.pytest_cache
+.vscode
+.idea
+
+all excels
+all resumes
+logs
+
+old
+
+secrets.py
+config/personals.py
+.venv
+apikeys.py
+
+# Local control-panel runtime files — contain your credentials/answers, never commit
+user_config.json
+.bot_run.log
+.bot_run.pid
+node_modules/
+web/dist/
+dist/
+build/
+*.egg-info/
+.env
+*.db
+*.db-wal
+*.db-shm
+.uv-cache/
+.npm-cache/

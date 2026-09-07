@@ -1,0 +1,17 @@
+fastapi
+pydantic>=2,<3
+uvicorn
+httpx
+sqlcipher3==0.6.2
+cryptography
+pywin32
+langgraph==1.2.10
+python-docx
+pypdf
+fpdf2
+pyinstaller
+pytest
+jsonschema
+openapi-spec-validator
+datamodel-code-generator
+

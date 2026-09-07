@@ -1,0 +1,575 @@
+{
+  "document_id": "IMP-LILA-001",
+  "version": "1.0",
+  "status": "Proposed plan; no implementation started",
+  "baselines": {
+    "BRD": "1.1",
+    "SDD": "0.31",
+    "FRD": "0.3",
+    "FD": "0.1",
+    "HLD": "0.1",
+    "LLD": "0.2"
+  },
+  "notes": [
+    "Milestone dependencies are entry dependencies. Completion/integration dependencies in implementation-plan.md and LLD-08 also apply.",
+    "M4 narrative qualification and M5 integration require M3/M4; M6 end-to-end acceptance requires integrated action ledger.",
+    "No time estimates, staffing assignment, or test success implied."
+  ],
+  "work_items": [
+    {
+      "id": "W00.1",
+      "milestone": "M0",
+      "title": "baseline and repository",
+      "status": "Planned",
+      "depends_on_milestones": [],
+      "source_sections": [
+        "LLD-06",
+        "LLD-07",
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W00.2",
+      "milestone": "M0",
+      "title": "dependency locks and licenses",
+      "status": "Planned",
+      "depends_on_milestones": [],
+      "source_sections": [
+        "LLD-06",
+        "LLD-07",
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W00.3",
+      "milestone": "M0",
+      "title": "generated contracts and migrations",
+      "status": "Planned",
+      "depends_on_milestones": [],
+      "source_sections": [
+        "LLD-06",
+        "LLD-07",
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W00.4",
+      "milestone": "M0",
+      "title": "fixture harness and evidence registry",
+      "status": "Planned",
+      "depends_on_milestones": [],
+      "source_sections": [
+        "LLD-06",
+        "LLD-07",
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W01.1",
+      "milestone": "M1",
+      "title": "supervisor and lifecycle",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0"
+      ],
+      "source_sections": [
+        "LLD-01",
+        "LLD-02",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W01.2",
+      "milestone": "M1",
+      "title": "TLS and launcher bootstrap",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0"
+      ],
+      "source_sections": [
+        "LLD-01",
+        "LLD-02",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W01.3",
+      "milestone": "M1",
+      "title": "pairing and scoped sessions",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0"
+      ],
+      "source_sections": [
+        "LLD-01",
+        "LLD-02",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W01.4",
+      "milestone": "M1",
+      "title": "encrypted stores and migrations",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0"
+      ],
+      "source_sections": [
+        "LLD-01",
+        "LLD-02",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W02.1",
+      "milestone": "M2",
+      "title": "task states and independent controls",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-03",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W02.2",
+      "milestone": "M2",
+      "title": "verified facts and artifacts",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-03",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W02.3",
+      "milestone": "M2",
+      "title": "policies and approval versions",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-03",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W02.4",
+      "milestone": "M2",
+      "title": "identity ledger and state events",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-03",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W03.1",
+      "milestone": "M3",
+      "title": "checkpoint saver and graph",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-03",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W03.2",
+      "milestone": "M3",
+      "title": "provider and budget integration",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-03",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W03.3",
+      "milestone": "M3",
+      "title": "grounded drafting evaluation",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-03",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W04.1",
+      "milestone": "M4",
+      "title": "extension and authenticated protocol",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W04.2",
+      "milestone": "M4",
+      "title": "discovery and form adapters",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W04.3",
+      "milestone": "M4",
+      "title": "uploads and outcome reconciliation",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W04.4",
+      "milestone": "M4",
+      "title": "authorized live variant qualification",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W05.1",
+      "milestone": "M5",
+      "title": "setup and task screens",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W05.2",
+      "milestone": "M5",
+      "title": "review facts and document screens",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W05.3",
+      "milestone": "M5",
+      "title": "analytics and administration",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W05.4",
+      "milestone": "M5",
+      "title": "accessibility and mode parity",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-04"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W06.1",
+      "milestone": "M6",
+      "title": "snapshots and portable export",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W06.2",
+      "milestone": "M6",
+      "title": "restore and rekey",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W06.3",
+      "milestone": "M6",
+      "title": "audit retention and deletion",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2"
+      ],
+      "source_sections": [
+        "LLD-02",
+        "LLD-06",
+        "LLD-07"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W07.1",
+      "milestone": "M7",
+      "title": "onedir package and per-user installer",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "source_sections": [
+        "LLD-05",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W07.2",
+      "milestone": "M7",
+      "title": "signatures and update activation",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "source_sections": [
+        "LLD-05",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W07.3",
+      "milestone": "M7",
+      "title": "clean-machine qualification",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "source_sections": [
+        "LLD-05",
+        "LLD-06"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W08.1",
+      "milestone": "M8",
+      "title": "regression and performance evidence",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "source_sections": [
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W08.2",
+      "milestone": "M8",
+      "title": "operational runbook and UAT",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "source_sections": [
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    },
+    {
+      "id": "W08.3",
+      "milestone": "M8",
+      "title": "release disposition",
+      "status": "Planned",
+      "depends_on_milestones": [
+        "M0",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "source_sections": [
+        "LLD-08"
+      ],
+      "evidence": [],
+      "assignee": null,
+      "reviewer": null
+    }
+  ]
+}
