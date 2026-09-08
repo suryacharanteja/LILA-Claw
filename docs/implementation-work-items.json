@@ -1,7 +1,7 @@
 {
   "document_id": "IMP-LILA-001",
   "version": "1.1",
-  "status": "Phase 1 in progress; M0 engineering verified; M1 not started",
+  "status": "Phase 1: M2 domain implementation in progress; M1 temporary certificate cleanup remains pending",
   "baselines": {
     "BRD": "1.1",
     "SDD": "0.31",
@@ -100,7 +100,7 @@
       "id": "W01.1",
       "milestone": "M1",
       "title": "supervisor and lifecycle",
-      "status": "Planned",
+      "status": "Verified",
       "depends_on_milestones": [
         "M0"
       ],
@@ -109,16 +109,20 @@
         "LLD-02",
         "LLD-06"
       ],
-      "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "uat_status": "Not started"
+      "evidence": [
+        "docs/implementation-evidence/M1/README.md",
+        "docs/implementation-evidence/M1/verification.txt",
+        "docs/implementation-evidence/M1/trust.xml"
+      ],
+      "assignee": "Codex",
+      "reviewer": "Self-reviewed; no independent reviewer assigned",
+      "uat_status": "Engineering verification used for foundation; business UAT later; temporary certificate cleanup pending"
     },
     {
       "id": "W01.2",
       "milestone": "M1",
       "title": "TLS and launcher bootstrap",
-      "status": "Planned",
+      "status": "In review",
       "depends_on_milestones": [
         "M0"
       ],
@@ -127,16 +131,20 @@
         "LLD-02",
         "LLD-06"
       ],
-      "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "uat_status": "Not started"
+      "evidence": [
+        "docs/implementation-evidence/M1/README.md",
+        "docs/implementation-evidence/M1/verification.txt",
+        "docs/implementation-evidence/M1/trust.xml"
+      ],
+      "assignee": "Codex",
+      "reviewer": "Self-reviewed; no independent reviewer assigned",
+      "uat_status": "Engineering verification used for foundation; business UAT later; temporary certificate cleanup pending"
     },
     {
       "id": "W01.3",
       "milestone": "M1",
       "title": "pairing and scoped sessions",
-      "status": "Planned",
+      "status": "Verified",
       "depends_on_milestones": [
         "M0"
       ],
@@ -145,16 +153,20 @@
         "LLD-02",
         "LLD-06"
       ],
-      "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "uat_status": "Not started"
+      "evidence": [
+        "docs/implementation-evidence/M1/README.md",
+        "docs/implementation-evidence/M1/verification.txt",
+        "docs/implementation-evidence/M1/trust.xml"
+      ],
+      "assignee": "Codex",
+      "reviewer": "Self-reviewed; no independent reviewer assigned",
+      "uat_status": "Engineering verification used for foundation; business UAT later; temporary certificate cleanup pending"
     },
     {
       "id": "W01.4",
       "milestone": "M1",
       "title": "encrypted stores and migrations",
-      "status": "Planned",
+      "status": "Verified",
       "depends_on_milestones": [
         "M0"
       ],
@@ -163,16 +175,20 @@
         "LLD-02",
         "LLD-06"
       ],
-      "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "uat_status": "Not started"
+      "evidence": [
+        "docs/implementation-evidence/M1/README.md",
+        "docs/implementation-evidence/M1/verification.txt",
+        "docs/implementation-evidence/M1/trust.xml"
+      ],
+      "assignee": "Codex",
+      "reviewer": "Self-reviewed; no independent reviewer assigned",
+      "uat_status": "Engineering verification used for foundation; business UAT later; temporary certificate cleanup pending"
     },
     {
       "id": "W02.1",
       "milestone": "M2",
       "title": "task states and independent controls",
-      "status": "Planned",
+      "status": "In progress",
       "depends_on_milestones": [
         "M1"
       ],
@@ -181,16 +197,19 @@
         "LLD-03",
         "LLD-07"
       ],
-      "evidence": [],
+      "evidence": [
+        "docs/implementation-evidence/M2/README.md",
+        "docs/implementation-evidence/M2/domain.xml"
+      ],
       "assignee": null,
       "reviewer": null,
-      "uat_status": "Not started"
+      "uat_status": "Not applicable to this backend checkpoint; later workflow UAT pending"
     },
     {
       "id": "W02.2",
       "milestone": "M2",
       "title": "verified facts and artifacts",
-      "status": "Planned",
+      "status": "In progress",
       "depends_on_milestones": [
         "M1"
       ],
@@ -199,16 +218,19 @@
         "LLD-03",
         "LLD-07"
       ],
-      "evidence": [],
+      "evidence": [
+        "docs/implementation-evidence/M2/README.md",
+        "docs/implementation-evidence/M2/domain.xml"
+      ],
       "assignee": null,
       "reviewer": null,
-      "uat_status": "Not started"
+      "uat_status": "Not applicable to this backend checkpoint; later workflow UAT pending"
     },
     {
       "id": "W02.3",
       "milestone": "M2",
       "title": "policies and approval versions",
-      "status": "Planned",
+      "status": "In progress",
       "depends_on_milestones": [
         "M1"
       ],
@@ -217,16 +239,19 @@
         "LLD-03",
         "LLD-07"
       ],
-      "evidence": [],
+      "evidence": [
+        "docs/implementation-evidence/M2/README.md",
+        "docs/implementation-evidence/M2/domain.xml"
+      ],
       "assignee": null,
       "reviewer": null,
-      "uat_status": "Not started"
+      "uat_status": "Not applicable to this backend checkpoint; later workflow UAT pending"
     },
     {
       "id": "W02.4",
       "milestone": "M2",
       "title": "identity ledger and state events",
-      "status": "Planned",
+      "status": "In progress",
       "depends_on_milestones": [
         "M1"
       ],
@@ -235,10 +260,13 @@
         "LLD-03",
         "LLD-07"
       ],
-      "evidence": [],
+      "evidence": [
+        "docs/implementation-evidence/M2/README.md",
+        "docs/implementation-evidence/M2/domain.xml"
+      ],
       "assignee": null,
       "reviewer": null,
-      "uat_status": "Not started"
+      "uat_status": "Not applicable to this backend checkpoint; later workflow UAT pending"
     },
     {
       "id": "W03.1",

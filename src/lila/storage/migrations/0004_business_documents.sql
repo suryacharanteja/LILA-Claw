@@ -1,0 +1,2 @@
+CREATE TABLE document_uploads(id TEXT PRIMARY KEY, operation_id TEXT NOT NULL REFERENCES operations(id), account_id TEXT NOT NULL REFERENCES accounts(id), filename TEXT NOT NULL, digest TEXT NOT NULL, state TEXT NOT NULL CHECK(state IN('STAGING','READY','FAILED')), version_id TEXT REFERENCES artifact_versions(id), error_code TEXT, revision INTEGER NOT NULL DEFAULT 1);
+CREATE TABLE selected_documents(account_id TEXT PRIMARY KEY REFERENCES accounts(id), version_id TEXT NOT NULL REFERENCES artifact_versions(id));

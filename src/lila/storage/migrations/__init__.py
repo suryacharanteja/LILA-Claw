@@ -1,5 +1,6 @@
 """Versioned schema application shared by test connections and later M1 driver."""
 from pathlib import Path
+import hashlib
 
 ROOT = Path(__file__).parent
 
@@ -18,7 +19,11 @@ def apply_initial_schema(connection, store: str):
         raise ValueError("refusing unversioned non-empty store")
     # Foreign keys must be enabled before BEGIN; the SQL repeats this harmlessly.
     connection.execute("PRAGMA foreign_keys=ON")
-    sql = (ROOT / f"0001_{store}.sql").read_text(encoding="utf-8")
+    raw = (ROOT / f"0001_{store}.sql").read_bytes()
+    sql = raw.decode("utf-8")
+    if store == "business":
+        checksum = hashlib.sha256(raw).hexdigest()
+        sql += f"\nINSERT INTO schema_migrations VALUES(1,'{checksum}',strftime('%Y-%m-%dT%H:%M:%fZ','now'));"
     try:
         connection.executescript("BEGIN IMMEDIATE;\n" + sql + "\nPRAGMA user_version=1;\nCOMMIT;")
     except Exception:

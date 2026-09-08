@@ -28,3 +28,5 @@ For each usable milestone, the developer implements and performs relevant automa
 ## Current execution record — 8 September 2026
 
 The owner directed completion of Phase 1 before Phase 2, then Phase 3 and later phases; see [phase sequencing](phase-sequencing.md). M0 is engineering Verified with [evidence](implementation-evidence/M0/README.md). M1 has not started. Earlier planning-time statements that implementation had not begun are historical. Business UAT and release acceptance remain pending.
+
+Current M1 update: runtime/authentication/storage implementation and automated checks are available in [M1 evidence](implementation-evidence/M1/README.md). M1 remains In review only for temporary certificate cleanup; both technical decisions are resolved and Chrome qualification passed. M2 has not started; Phase 1 remains the only active product phase.

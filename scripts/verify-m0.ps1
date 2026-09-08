@@ -5,7 +5,7 @@ $priorAutoload = $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD
 $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = '1'
 Start-Transcript -Path docs/implementation-evidence/M0/verification.txt -Force | Out-Null
 try {
-    & $python -m pytest -c pyproject.toml --confcutdir=tests/foundation --junitxml=docs/implementation-evidence/M0/pytest.xml
+    & $python -m pytest -c pyproject.toml --confcutdir=tests/foundation tests/foundation --junitxml=docs/implementation-evidence/M0/pytest.xml
     if ($LASTEXITCODE) { throw 'Foundation tests failed' }
     & npm.cmd run typecheck
     if ($LASTEXITCODE) { throw 'TypeScript validation failed' }
