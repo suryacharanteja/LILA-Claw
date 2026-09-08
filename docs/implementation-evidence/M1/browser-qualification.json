@@ -1,0 +1,11 @@
+{
+  "chrome_exit_code": 0,
+  "session_connected": true,
+  "certificate_thumbprint": "D46EEBF7C0B8CF5176B7CD7B3C5E3F840006E164",
+  "trust_scope": "CurrentUser Root",
+  "tls_bypass_flags": false,
+  "isolated_profile": true,
+  "trust_removed": false,
+  "cleanup_status": "Pending: Windows deletion returned ERROR_CANCELLED; follow-up removal rejected by automatic approval policy",
+  "certificate_still_present": true
+}
