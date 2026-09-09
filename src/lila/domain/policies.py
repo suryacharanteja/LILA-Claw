@@ -89,7 +89,7 @@ class Policies:
             return self.receipt(policy_id,row[1]+1,"REVOKED" if operation=="revoke" else "ACTIVE")
         return self.command(principal,command_id,["policy_command",policy_id,expected_revision,operation,policy],change)
 
-    def prepare_review(self,action_ids):
+    def prepare_review(self,action_ids,*,principal=None,command_id=None):
         if not 1<=len(action_ids)<=100 or len(set(action_ids))!=len(action_ids):
             raise DomainError("INVALID_REQUEST",422)
         def change(db):
@@ -107,8 +107,28 @@ class Policies:
             version = self.content(db,"review",{"account_id":account,"members":members})
             member_version = self.content(db,"review_members",members)
             db.execute("INSERT INTO review_previews VALUES(?,?,?,?,1,'PENDING')",(entity,account,version,member_version))
-            return {"review_id":entity,"revision":1,"payload_version":version,"members":members}
+            result = {"review_id":entity,"revision":1,"payload_version":version,"members":members}
+            self.event(db,'REVIEW_PREPARED','review',entity,1)
+            return dict(self.receipt(entity,1,'PENDING'),**result) if principal else result
+        if principal:
+            return self.command(principal,command_id,['prepare_review',action_ids],change)
         return self.writer.call(change)
+
+    def review(self,review_id):
+        def read(db):
+            row = db.execute('SELECT account_id,payload_version,members_version,revision,state FROM review_previews WHERE id=?',(identifier(review_id),)).fetchone()
+            if not row:
+                raise DomainError('NOT_FOUND',404)
+            actions = []
+            members = self.value(db,row[2])
+            for member in members:
+                action = self._action(db,member['action_id'])
+                target = db.execute('SELECT j.canonical_url,j.external_id FROM applications p JOIN jobs j ON j.id=p.job_id WHERE p.id=?',(action['application_id'],)).fetchone()
+                artifact = db.execute('SELECT artifact_version FROM drafts WHERE id=?',(action['draft_id'],)).fetchone()[0]
+                blockers = db.execute('SELECT reason FROM action_blockers WHERE action_id=?',(action['id'],)).fetchone()
+                actions.append({'action_id':action['id'],'kind':action['kind'],'account_id':row[0],'destination':target[0],'external_job_id':target[1],'payload_version':member['payload_version'],'answers':self.value(db,member['payload_version']),'artifact_version':artifact,'facts_current':self._facts_ready(db,action['draft_id'],row[0]),'blocking_reasons':list(blockers or []),'policy_id':action['policy_id']})
+            return {'review_id':review_id,'account_id':row[0],'payload_version':row[1],'members':members,'revision':row[3],'state':row[4],'actions':actions}
+        return self.writer.call(read,transaction=False)
 
     def approval_command(self,principal,review_id,body):
         body = validate("ApprovalCommand",body)

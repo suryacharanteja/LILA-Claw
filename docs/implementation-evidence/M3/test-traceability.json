@@ -1,0 +1,4796 @@
+[
+  {
+    "test_id": "tests.foundation.test_design_invariants::test_approved_design_invariants",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_design_invariants.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "a0683d32093220e84d415c3899c38229ae940d3126f75f40a6381d272dee5cc7",
+    "source_sha256": "a0683d32093220e84d415c3899c38229ae940d3126f75f40a6381d272dee5cc7",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.258",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_full_schema_and_openapi",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.215",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_migration_matches_baseline_and_reopens[business-schema-v1.sql]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.004",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_migration_matches_baseline_and_reopens[auth-auth-schema-v1.sql]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.002",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_unknown_or_legacy_store_is_not_overwritten",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_receipt_roundtrip_replay_conflict_and_restart",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.059",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_generated_model_and_schema_reject_invalid[invalid0]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_generated_model_and_schema_reject_invalid[invalid1]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_generated_model_and_schema_reject_invalid[invalid2]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_generated_model_and_schema_reject_invalid[invalid3]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_offline_doubles",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[fastapi]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[pydantic]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[uvicorn]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.027",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[httpx]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.014",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[sqlcipher3]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.004",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[cryptography]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[win32crypt]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.002",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[langgraph.graph]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.319",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[langgraph.checkpoint.base]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[docx]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.042",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[pypdf]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.096",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[fpdf]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.167",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_selected_dependency_import[PyInstaller]",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.219",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_foundation::test_sqlcipher_binary_exposes_cipher",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_foundation.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "source_sha256": "6652a767e4ef17d83a9a3c9d771c74ed89882424826e1cd44822aa801dd0490f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_migration_failures::test_failed_migration_rolls_back_schema_and_version",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_migration_failures.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "625b610fbea85c6c81ba21946fbe51644475eff0fb93a6853f6beb3cb7f7796c",
+    "source_sha256": "625b610fbea85c6c81ba21946fbe51644475eff0fb93a6853f6beb3cb7f7796c",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.002",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.foundation.test_migration_failures::test_store_name_cannot_select_arbitrary_file",
+    "milestone": "M3 regression",
+    "source": "tests/foundation/test_migration_failures.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "625b610fbea85c6c81ba21946fbe51644475eff0fb93a6853f6beb3cb7f7796c",
+    "source_sha256": "625b610fbea85c6c81ba21946fbe51644475eff0fb93a6853f6beb3cb7f7796c",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "foundation.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_failure_cases::test_control_pipe_rejects_other_sid",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_failure_cases.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "source_sha256": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_failure_cases::test_revocation_idempotency_and_conflicting_command",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_failure_cases.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "source_sha256": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.018",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_failure_cases::test_installation_dpapi_separation_acl_and_explicit_trust",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_failure_cases.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "source_sha256": "07a6c5931f4aa342333367cfff341f937faab09892d5bd3d235c7eba21172afb",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.418",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_launch_gate::test_automatic_bootstrap_launch_requires_resolved_decision",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_launch_gate.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "bf09e0fe302ca5d7fb54023efc9c73ae96bd6584991acfde83f1cb5f85f8f5c3",
+    "source_sha256": "bf09e0fe302ca5d7fb54023efc9c73ae96bd6584991acfde83f1cb5f85f8f5c3",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_launch_gate::test_approved_bootstrap_launch_uses_only_pipe_capability",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_launch_gate.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "bf09e0fe302ca5d7fb54023efc9c73ae96bd6584991acfde83f1cb5f85f8f5c3",
+    "source_sha256": "bf09e0fe302ca5d7fb54023efc9c73ae96bd6584991acfde83f1cb5f85f8f5c3",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_pairing_tls::test_pairing_confirmation_atomic_consume_and_reconnect",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_pairing_tls.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "source_sha256": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.016",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_pairing_tls::test_pairing_attempt_limit_and_expiry",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_pairing_tls.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "source_sha256": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.020",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_pairing_tls::test_tls_constraints_verified_handshake_and_impostor",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_pairing_tls.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "source_sha256": "6d4bbbda93277f5eb61cbf9e5c825444ee371d97606a81e70cc8956fc67d4784",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.823",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_process_supervisor::test_three_process_topology_and_intentional_shutdown",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_process_supervisor.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "1c2d80990e8f562add170c6477de44aef15ed70df03ec114a6e708c30feb094a",
+    "source_sha256": "1c2d80990e8f562add170c6477de44aef15ed70df03ec114a6e708c30feb094a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "5.502",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_runtime::test_real_runtime_port_collision_worker_pipe_quit",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_runtime.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dc951750c2cfe13e802710da7a265792cd5d6295625a72b215b72fe82b6fca9c",
+    "source_sha256": "dc951750c2cfe13e802710da7a265792cd5d6295625a72b215b72fe82b6fca9c",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "3.444",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_sessions::test_bootstrap_atomic_expiry_and_no_plaintext_hash",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_sessions.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "source_sha256": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.012",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_sessions::test_renewal_overlap_csrf_revocation_epoch",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_sessions.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "source_sha256": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.013",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_sessions::test_http_boundaries_and_cookie",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_sessions.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "source_sha256": "9757be70b1e54d76ce1d27bbbeae25260f48e01963bdabf2c995b165522a61ba",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.023",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_tls_pipe_race::test_tls_key_reader_connecting_before_server_wait_is_valid",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_tls_pipe_race.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "a7dff3c13dd4b4eb5ec037f29111924a897f25f7e111f25b3741cddfe39a5ccd",
+    "source_sha256": "a7dff3c13dd4b4eb5ec037f29111924a897f25f7e111f25b3741cddfe39a5ccd",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.285",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_websocket::test_websocket_origin_authentication_renewal_and_revocation",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_websocket.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "f025dcedc0f7c15df2560293d32666f89d94f26e2515844ecc17da52dc54b343",
+    "source_sha256": "f025dcedc0f7c15df2560293d32666f89d94f26e2515844ecc17da52dc54b343",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_windows_storage::test_dpapi_roundtrip_corruption",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_windows_storage.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "source_sha256": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_windows_storage::test_encrypted_database_and_wal_reopen_wrong_key",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_windows_storage.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "source_sha256": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.040",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_windows_storage::test_writer_serialization_rollback_and_shutdown",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_windows_storage.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "source_sha256": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.028",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_windows_storage::test_owner_mutex_and_control_pipe",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_windows_storage.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "source_sha256": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.437",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_windows_storage::test_crash_loop_and_intentional_quit",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_windows_storage.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "source_sha256": "dda2b50fd8e5879d0d59e92f21b902f36192502f738656c0ca3d779bd9e940ee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_worker_extraction::test_real_worker_extracts_proposals_without_overwriting_owner",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_worker_extraction.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "233b01c960f3e75282a68ddf6866a2b0bfd8a679c916351a450edd5743f9999a",
+    "source_sha256": "233b01c960f3e75282a68ddf6866a2b0bfd8a679c916351a450edd5743f9999a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "3.172",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_worker_extraction::test_async_worker_pin_mismatch_rejected",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_worker_extraction.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "233b01c960f3e75282a68ddf6866a2b0bfd8a679c916351a450edd5743f9999a",
+    "source_sha256": "233b01c960f3e75282a68ddf6866a2b0bfd8a679c916351a450edd5743f9999a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.592",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.trust.test_worker_tasks::test_separate_worker_runs_zero_match_graph_over_https",
+    "milestone": "M3 regression",
+    "source": "tests/trust/test_worker_tasks.py",
+    "requirement_ids": [
+      "FR-003",
+      "FR-019",
+      "FR-029"
+    ],
+    "fixture_digest": "4c6bccdfdd7a5d87e1f682ffccc087cde2bef56950061ac2c76128daa5d4962e",
+    "source_sha256": "4c6bccdfdd7a5d87e1f682ffccc087cde2bef56950061ac2c76128daa5d4962e",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "3.136",
+    "result": "passed",
+    "evidence": "trust.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[CONFIRMED]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_action_run_limits.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.050",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[FAILED]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_action_run_limits.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.041",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[UNCERTAIN]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_action_run_limits.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.039",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_action_run_limits::test_failed_attempt_migration_repairs_linked_windows_once",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_action_run_limits.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_ai_claim_timeout_late_usage_and_no_double_charge",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.028",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_ai_budget_and_policy_tightening",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.028",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_ai_rejection_releases_and_bound_failure_latches_config",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_ai_stale_prices_and_disabled_provider",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.023",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-001]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-002]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-003]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-004]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-005]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-006]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-007]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-008]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-009]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-010]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-011]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-012]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-013]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-014]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-015]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-016]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-017]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-018]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-019]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-020]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-021]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-022]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-023]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-024]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-025]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-026]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-027]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-028]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-029]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-030]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-031]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-032]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-033]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-034]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-035]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-036]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-037]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-038]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-039]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-040]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-041]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-042]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-043]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-044]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-045]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-046]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-047]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-048]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-049]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-050]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-051]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-052]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-053]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-054]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-055]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-056]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-057]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-058]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-059]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-060]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-061]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-062]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-063]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-064]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-065]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-066]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-067]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-068]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-069]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-070]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-071]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-072]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-073]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-074]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-075]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-076]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-077]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-078]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-079]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-080]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-081]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-082]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-083]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-084]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-085]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-086]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-087]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-088]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-089]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-090]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-091]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-092]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-093]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-094]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-095]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-096]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-097]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-098]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-099]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_factual_matrix[T-FACT-100]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[success]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.002",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[timeout]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[server_error]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[reject]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[refusal]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[incomplete]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[bad_model]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_transport_contract[fabrication]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.020",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai::test_provider_payload_bound",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_concurrent_runs_cannot_reserve_beyond_shared_daily_budget",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_timezone_roundtrip_and_late_usage_do_not_reset_or_double_budget",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_replacement_worker_cannot_claim_or_reconcile_predecessor_invocation",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.031",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates0]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.026",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates1]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.026",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates2]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.028",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates3]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_recovery_matrix.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.027",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_routes::test_private_ai_flow_dpapi_and_no_resend",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_routes.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "b6270b7e65349a633642b2a824ee3be924b1e82854cb743587e152e5b655ebdd",
+    "source_sha256": "b6270b7e65349a633642b2a824ee3be924b1e82854cb743587e152e5b655ebdd",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.100",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_ai_routes::test_configuration_does_not_enable_unqualified_live_provider",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_ai_routes.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "b6270b7e65349a633642b2a824ee3be924b1e82854cb743587e152e5b655ebdd",
+    "source_sha256": "b6270b7e65349a633642b2a824ee3be924b1e82854cb743587e152e5b655ebdd",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.045",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_artifacts::test_encrypted_publication_corruption_and_recovery",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_artifacts.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "source_sha256": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_artifacts::test_missing_staging_and_cross_account",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_artifacts.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "source_sha256": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.029",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_artifacts::test_invalid_type_archive_traversal_and_docx",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_artifacts.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "source_sha256": "6f1e81112d496323421f5845e5cdbeff8cc7626ed98e99548b65497e8d9764a5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.149",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_authority::test_explicit_approval_grants_only_exact_members",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_authority.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "source_sha256": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.041",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_authority::test_rejection_blocks_standing_permission_for_rejected_version",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_authority.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "source_sha256": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.035",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_authority::test_preview_cannot_extend_approved_24_hour_expiry",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_authority.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "source_sha256": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_authority::test_single_executor_and_owner_report_survives_old_action_failure",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_authority.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "source_sha256": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.044",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_authority::test_review_preparation_replay_and_material_details",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_authority.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "source_sha256": "4b2d074a625ed4ed3a83d4a31bd0b9a54eb830d9c6ce3d5bace65239dd9cb85b",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.032",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_timezone_changes_roundtrip_and_late_release",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.035",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_calendar_windows_follow_dst[2027-03-14T12:00:00+00:00-23]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.021",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_calendar_windows_follow_dst[2027-11-07T12:00:00+00:00-25]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_cross_account_policy_and_exact_membership",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.032",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_repost_review_and_owner_report_are_distinct",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.025",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_api_session_csrf_schema_receipt_and_events",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.056",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_invalid_fact_numbers_rejected[1.5]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_invalid_fact_numbers_rejected[9223372036854775808]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_boundaries::test_invalid_fact_numbers_rejected[nan]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_boundaries.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_values[nan]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_values[1.2]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_values[value2]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_values[value3]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_values[value4]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_wire[{\"x\":1,\"x\":2}]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_wire[{\"x\":NaN}]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_wire[{\"$lila_checkpoint\":\"import\",\"value\":\"os\"}]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_rejects_unsafe_wire[{\"$lila_checkpoint\":\"bytes\",\"value\":\"!!!\"}]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_codec_interrupt_and_bytes_roundtrip",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_checkpoint_history_writes_conflicts_and_fences",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.048",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_real_langgraph_resume_from_new_saver",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.150",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_real_async_langgraph_resume",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.139",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_worker_scope_and_deletion_denied",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.033",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_lost_checkpoint_reply_replays_once_and_fenced_replay_is_denied[checkpoint]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_lost_checkpoint_reply_replays_once_and_fenced_replay_is_denied[writes]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.040",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_checkpoints::test_checkpoint_pagination_and_criteria_namespace_isolation",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_checkpoints.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "source_sha256": "6ae7dbd878a9d2b270cd3296bed8739bbd814e1acdfcbae5d18b36ad6b47de8a",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.419",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_independent_holds_and_restart",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_concurrent_command_replay_and_conflicting_reuse",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_pause_blocks_claim_stop_releases_allowance",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.039",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_recovery_keeps_uncertainty_across_restart",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.040",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_daily_cap_and_confirmed_duplicate",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.048",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_fact_edit_invalidates_exact_review",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.037",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_controls::test_lease_expiry_and_policy_change_before_claim",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_controls.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_criteria::test_unknown_salary_excluded_company_and_preferences",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_criteria.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "source_sha256": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.000",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_criteria::test_criteria_edit_cancels_unclaimed_preserves_lineage_and_blocks_unknown",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_criteria.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "source_sha256": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.040",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_criteria::test_conflicting_proposal_is_visible_without_discarding_verified_value",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_criteria.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "source_sha256": "7f00fa9ce03b8a4b774470e5beec33a7da2e5d9db1b708a06075b509b5829c5e",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_domain_exit::test_new_task_during_global_pause_is_held",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_domain_exit.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "source_sha256": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.026",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_domain_exit::test_resume_does_not_restore_expired_authority",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_domain_exit.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "source_sha256": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.035",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_domain_exit::test_distinct_repost_and_unknown_identity",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_domain_exit.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "source_sha256": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.027",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_domain_exit::test_fact_source_scope_and_immutability",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_domain_exit.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "source_sha256": "4f0a2e17b78667b2e72ebcf2508f98f6a899f04b619d40ad3f0f04aa4b18fa27",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_receipts_and_holds_survive_reopen",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_pause_claim_race_has_single_serial_order",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_identical_outcome_is_idempotent",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_monotonic_lease_and_backward_wall_time_fail_closed",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.031",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_list_cursor_scope_tamper_expiry",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.026",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_durability::test_sse_event_and_expired_cursor_signal",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_durability.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "source_sha256": "72ddf7b93a17609c57236c42c440ac63de255a810599afbadc905504113fc679",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.072",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_extraction::test_image_only_pdf_requires_manual_facts",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_extraction.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "9beb493fb0c750051b01e7c72574a2e192712c5468cd8840ac4b6e3b23e178ce",
+    "source_sha256": "9beb493fb0c750051b01e7c72574a2e192712c5468cd8840ac4b6e3b23e178ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.001",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_extraction::test_extraction_reclaim_fences_old_worker_and_replay_is_idempotent",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_extraction.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "9beb493fb0c750051b01e7c72574a2e192712c5468cd8840ac4b6e3b23e178ce",
+    "source_sha256": "9beb493fb0c750051b01e7c72574a2e192712c5468cd8840ac4b6e3b23e178ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.161",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_fact_conflicts::test_conflicting_import_does_not_replace_verified_fact_or_approval",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_fact_conflicts.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "2d0d95ef244cf456443503bc23ffe1fc52d5b0727a63e8a1fc42cdadc1cd86fd",
+    "source_sha256": "2d0d95ef244cf456443503bc23ffe1fc52d5b0727a63e8a1fc42cdadc1cd86fd",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.037",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_grounding::test_fact_reference_cannot_launder_invented_answer",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_grounding.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3f7dd10bd72ebfa56fe20d3578967efeae18fb080c1ccc67bd1cd53935a6049d",
+    "source_sha256": "3f7dd10bd72ebfa56fe20d3578967efeae18fb080c1ccc67bd1cd53935a6049d",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.025",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_grounding::test_grounded_narrative_rejects_stale_fact_before_publication",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_grounding.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3f7dd10bd72ebfa56fe20d3578967efeae18fb080c1ccc67bd1cd53935a6049d",
+    "source_sha256": "3f7dd10bd72ebfa56fe20d3578967efeae18fb080c1ccc67bd1cd53935a6049d",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.027",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_lifecycle_corrections::test_wait_survives_holds_and_zero_match_completion",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_lifecycle_corrections.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "source_sha256": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.033",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_lifecycle_corrections::test_completion_rejects_prepared_work_and_blockers_deny_dispatch",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_lifecycle_corrections.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "source_sha256": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_lifecycle_corrections::test_conflicting_terminal_outcome_requires_exact_review_and_reconciles_counts",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_lifecycle_corrections.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "source_sha256": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.039",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_lifecycle_corrections::test_stale_correction_and_audit_tamper_detection",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_lifecycle_corrections.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "source_sha256": "6389288cfcd24c8d492bbcbef247b43d88624ee4f3cf9b366415caa7462dbfca",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.037",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_v2_store_upgrades_without_changing_prior_checksums",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.038",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_capability_rechecked_and_blocking_reason_persisted",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.033",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_segment_rollover_and_wrong_audit_key",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.070",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_failed_intent_transaction_leaves_no_reservation_or_guard",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.033",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_full_100_mib_stream_limit_without_disk_spooling",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.271",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_expired_policy_creation_replay_returns_original_receipt",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_m2_acceptance::test_claim_crossing_midnight_moves_daily_reservation",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_m2_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "source_sha256": "d439124078a9195e74c17656ac4c9d70f01c954919cb6cb2737c4c46a37a80ce",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.038",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_replay_acceptance::test_recovery_at_local_action_boundaries[before_intent]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_replay_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "source_sha256": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.032",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_replay_acceptance::test_recovery_at_local_action_boundaries[after_intent]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_replay_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "source_sha256": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_replay_acceptance::test_recovery_at_local_action_boundaries[after_claim]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_replay_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "source_sha256": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_replay_acceptance::test_recovery_at_local_action_boundaries[after_outcome]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_replay_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "source_sha256": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.036",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_replay_acceptance::test_failure_before_outcome_commit_rolls_back_then_reconciles_once",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_replay_acceptance.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "source_sha256": "5e6a6dee647aac0de1d7f093ee35776b1f032662b1b4422a3a5c2b38b525e6b4",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.037",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_response_contracts::test_task_receipt_and_stream_events_match_approved_schema",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_response_contracts.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "3fb73a94a1472abbd29469d1806f70b493a65e79d450242f6a2138a92cd2a22f",
+    "source_sha256": "3fb73a94a1472abbd29469d1806f70b493a65e79d450242f6a2138a92cd2a22f",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.035",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_uploads::test_chunked_multipart_limits_duplicates_and_truncation",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_uploads.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "source_sha256": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.024",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_uploads::test_upload_status_selection_idempotency_auth_and_safe_files",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_uploads.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "source_sha256": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.059",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_uploads::test_publication_failure_and_recovery_are_visible",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_uploads.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "source_sha256": "ca7aa72b321bb89bfb5bb42613774b43f1ca2f1ca2acfcf1d919f2418c644738",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.038",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[None]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.130",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[uncertain]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.106",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[invalid]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.098",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[lost_usage_reply]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.100",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[lost_publish_reply]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.120",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[oversized]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.092",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[budget]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.085",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_narrative::test_graph_provider_result_is_grounded_and_replay_does_not_pay_twice[stale_prices]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_narrative.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "source_sha256": "53f5c312fb66ebfce886f9305a43d1bfdfff1dbe266889719fa886619bf51ba9",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.080",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_completion_blocker_after_final_checkpoint_waits_and_recovers[pause]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.079",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_completion_blocker_after_final_checkpoint_waits_and_recovers[unavailable]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.079",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_transient_checkpoint_read_failure_recovers_without_business_event",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.091",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_elapsed_time_does_not_clear_required_resolution[FACTS_REQUIRED]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.030",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_elapsed_time_does_not_clear_required_resolution[AI_RECONCILIATION_REQUIRED]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.032",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_lost_completion_acknowledgement_recovers_without_repeating_discovery[before-ack-commit]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.086",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_lost_completion_acknowledgement_recovers_without_repeating_discovery[after-ack-commit]",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.069",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_worker_http_assignment_zero_matches_completes_after_checkpoint",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.109",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_worker_waits_for_facts_then_prepares_one_stable_action",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.101",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_unconfigured_or_unavailable_work_never_claimed",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.025",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_browser_observation_does_not_block_pause_and_cannot_publish_after_pause",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.034",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_replacement_worker_resumes_same_checkpoints_without_rediscovery",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.074",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_criteria_edit_during_observation_rejects_old_page",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.035",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_work_transport::test_old_criteria_completion_acknowledgement_cannot_complete_revised_task",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_work_transport.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "source_sha256": "e5f4ba0733daa4be3cc90d5e141fa00c388243555db6db54ece734b423ca01c5",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.039",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_worker_graph::test_graph_interrupt_resume_stable_action_and_maximum",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_worker_graph.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "source_sha256": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.093",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_worker_graph::test_graph_two_repeated_pages_terminate",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_worker_graph.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "source_sha256": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.094",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_worker_graph::test_graph_stop_during_wait_prevents_next_candidate",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_worker_graph.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "source_sha256": "d488d198e53259695a543494b1b4f092fd7f5ef0708f55ded24607c6398adfee",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.078",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_worker_recovery::test_worker_heartbeats_extend_valid_lease_but_never_revive_expiry",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_worker_recovery.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "c06a6b47b0ef8de13ecf02db64187c686055994d0b1692caa4a9b9b8f3893117",
+    "source_sha256": "c06a6b47b0ef8de13ecf02db64187c686055994d0b1692caa4a9b9b8f3893117",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.031",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  },
+  {
+    "test_id": "tests.domain.test_worker_recovery::test_restart_releases_unsent_ai_and_retains_claimed_budget",
+    "milestone": "M3 regression",
+    "source": "tests/domain/test_worker_recovery.py",
+    "requirement_ids": [
+      "FR-010",
+      "FR-013",
+      "FR-022"
+    ],
+    "fixture_digest": "c06a6b47b0ef8de13ecf02db64187c686055994d0b1692caa4a9b9b8f3893117",
+    "source_sha256": "c06a6b47b0ef8de13ecf02db64187c686055994d0b1692caa4a9b9b8f3893117",
+    "preconditions": "Isolated local fixture, no external provider call",
+    "duration_seconds": "0.033",
+    "result": "passed",
+    "evidence": "domain.xml",
+    "fixture_label_approval": "Not claimed"
+  }
+]

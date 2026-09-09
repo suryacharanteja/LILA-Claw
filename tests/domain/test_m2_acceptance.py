@@ -27,7 +27,7 @@ def test_v2_store_upgrades_without_changing_prior_checksums(tmp_path):
     db.close()
     db = open_store(path,key,'business')
     try:
-        assert db.execute('PRAGMA user_version').fetchone()[0]==5
+        assert db.execute('PRAGMA user_version').fetchone()[0]==11
         assert db.execute('SELECT id FROM accounts').fetchone()[0]==account
         assert db.execute('SELECT checksum FROM schema_migrations WHERE version=2').fetchone()[0]==digest
         assert db.execute('PRAGMA foreign_key_check').fetchall()==[]

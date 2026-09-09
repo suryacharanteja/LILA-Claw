@@ -1,40 +1,42 @@
-# M2 domain and controls — implementation checkpoint
+# M2 — domain and controls
 
-Status: **In progress. This is not milestone completion, UAT acceptance, or release approval.**
+Engineering status: **Verified against local doubles and encrypted-store fixtures.** Sponsor UAT and Phase 1 release acceptance remain pending. M1 temporary certificate cleanup remains separately open.
 
-Phase 1 remains the only active product phase. This checkpoint implements the coordinator-owned domain foundation against local deterministic fixtures. Production execution remains blocked: no worker graph, browser dispatch, provider call, or Telegram integration is enabled by these changes.
+Phase 1 is the only active product phase. Production readiness still blocks execution: no graph, provider call, LinkedIn submission or Telegram operation is enabled here.
 
-## Implemented and tested
+## Delivered behavior
 
-| Work package | Behavior in this checkpoint | Evidence |
+| Package | Implemented behavior | Primary tests |
 |---|---|---|
-| W02.1 — task controls | Durable task/run creation; independent task/global holds; stop cancels unclaimed work and releases its reservations; restart creates a new run; command replay returns the original receipt across process restart | `test_controls.py`, `test_durability.py` |
-| W02.2 — facts/artifacts | Immutable fact versions and current-head checks; changed facts revoke affected previews; draft fact/account references; PDF/DOCX format preflight; opaque encrypted LILAOBJ1 publication; integrity verification; missing/corrupt files block use; staging recovery | `test_controls.py`, `test_artifacts.py` |
-| W02.3 — authority | Owner-supplied bounded standing policies; exact enumerated approvals as an alternative; 24-hour maximum preview validity; rejected versions remain blocked; policy expiry/revocation and version recheck; daily/run allowances; timezone carry and DST boundaries | `test_authority.py`, `test_boundaries.py` |
-| W02.4 — ledger/events | Stable job identity, repost review, application guards; intent/claim separation; a single claimed executor; lease expiry and generation fences; clock rollback blocks expiry-dependent execution; uncertain recovery; idempotent system outcomes; distinct owner-reported completion; receipt lookup, signed list cursors and SSE state events | `test_controls.py`, `test_boundaries.py`, `test_durability.py`, `test_authority.py` |
+| W02.1 — controls | Durable receipts, independent holds, preserved Awaiting input, Active/Blocked/Completed transitions, discovery/candidate/outcome completion guards, zero-match reason, stop cancellation, restart/recovery fences | controls, durability, lifecycle_corrections, domain_exit |
+| W02.2 — facts/documents | Immutable facts; conflicting imports remain proposals; source/account checks; PDF/DOCX validation; authenticated multipart receive to 100 MiB; encrypted publication/status/recovery; selection; bounded extraction handoff | artifacts, uploads, fact_conflicts, criteria |
+| W02.3 — authority | Explicit standing limits; exact batch approvals; review details and replay; rejection/expiry/revocation; run/daily reservations; timezone/DST carry; latest claim checks and midnight crossing | authority, boundaries, m2_acceptance, domain_exit |
+| W02.4 — identity/ledger/events | Stable identity/repost review; mandatory post-filtering; criteria-edit lineage; intent/claim serialization; refreshed browser capability checks; persisted blockers; uncertain outcomes; reviewed terminal corrections; audit verification; signed paging and schema-conformant SSE | criteria, lifecycle_corrections, m2_acceptance, response_contracts |
 
-The runtime opens the domain on its existing business writer and reconciles interrupted action/artifact state before exposing routes. Authentication, CSRF, HTTPS origin/host checks and the existing worker authentication remain in place. Internal account registration, draft preparation, proposal, intent, claim and evidence methods are trusted service boundaries, not public HTTP action-authority endpoints.
+The runtime verifies the local audit chain and reconciles interrupted action/artifact/upload state before attaching domain routes to the existing HTTPS/authentication boundary. The coordinator remains the sole business-store writer. Internal worker/browser methods accept trusted adapter inputs; public clients cannot use those methods to assert execution authority.
 
-Exact approval grants only its enumerated action versions; it creates no standing allowance and grants no AI spending. Standing policies require the owner's explicit limits. AI reservation and factual narrative validation still belong to M3 integration. The tests use fixture facts and evidence; they do not establish that arbitrary model output is factually correct.
+## Verification
 
-## Remaining before M2 can be marked Verified
+Run `./scripts/verify-m2.ps1` from the repository root in PowerShell. It uses the locked environment and separately runs foundation/trust/domain tests, TypeScript checking and the web build. See `summary.json`, the JUnit XML files and `verification.txt`. `test-traceability.json` records individual tests, requirement mappings, fixture/source digests, fault points and outcomes. See [acceptance mapping](acceptance-mapping.md) for later integration obligations.
 
-1. Complete the persisted worker-facing readiness/lifecycle transitions and acceptance cases for Awaiting input, Active and Completed, including unresolved-outcome and zero-result completion guards.
-2. Complete the document upload/status/selection API and bounded extraction handoff. This checkpoint accepts bounded bytes in the internal artifact service; it does not expose the approved 100 MiB streamed multipart upload route. Document generation and browser upload additionally require the later worker/browser integrations.
-3. Complete explicit correction proposals and their reviewed application for conflicting terminal outcomes. Identical outcome replay is idempotent and uncertain outcomes can be reconciled, but conflicting terminal evidence is currently rejected rather than creating the full correction workflow.
-4. Complete structured persisted blocking reasons, audit-chain verification and the remaining crash/fault-injection acceptance matrix, including account/tab capability changes supplied by the browser adapter. Append-only audit generation exists; that alone is not audit verification.
-5. Finish API/contract coverage review and the requirement-to-test matrix against LLD-02/03/07/08. The current tests are passing engineering evidence for implemented behavior, not proof that every M2 exit criterion is covered.
+The final run has **99 passing tests: 27 foundation, 19 trust and 53 domain**, with no failures, errors or skips. TypeScript checking and the web build pass. The existing Starlette/AnyIO deprecation warning is non-fatal. Preserved LLD snapshot hashes and the approved protocol copy are checked separately.
 
-Keep all W02 items In progress until their remaining criteria are implemented and verified. Do not advance to M3 or mark the entire Phase 1 scope covered based on this checkpoint.
+## Subsequent milestone boundaries
 
-## Reproduce verification
+- M3 consumes the queued extraction handoff and implements graph/checkpoint replay, provider costs and factual narrative validation. Document READY means validated encrypted bytes are available, not that facts were extracted or verified. Extraction handoff bounds output and requires PROPOSED facts. No OCR is promised.
+- M4 supplies the actual browser capability observer and qualifies filters/forms/fingerprints/outcome evidence. M2 uses explicit doubles. Job-condition evaluation is labeled post-filtering; ambiguous salary currency/period/range comparisons remain REVIEW.
+- M5 implements screens, pending-request UX, reviewed generation interactions, reporting and settings. Domain receipts/snapshots/events are tested; user-facing AC-018 assertions still require integrated client tests and UAT. No manual business UAT is requested for M2.
+- M6 extends audit verification for authorized retention/deletion and backup/restore. Local chain/head checks detect inconsistencies and tail deletion against the retained head; they do not claim protection against rollback of an entire consistent database and its head. Document export remains a privacy integration.
+- M7/M8 retain clean-machine, full failure/recovery, performance and release qualification. Passing M2 does not mark every cross-milestone FR complete.
 
-From the repository root, run `./scripts/verify-m2.ps1` in PowerShell. It uses the locked virtual environment and runs foundation, trust, and domain suites separately with their own pytest configuration boundary, followed by TypeScript checking and the production web build. Results are recorded in the three XML files and `verification.txt`; aggregate results are in `summary.json`.
+Only selection is enabled on document commands now; generation/export require later integrations. Additive criteria-edit, review preparation/read and correction-read routes support approved behavior without changing preserved baseline schemas. SSE data retains a numeric event cursor; SSE resume IDs are separately signed, principal-scoped and expiring.
 
-Fixtures use encrypted temporary databases, synthetic documents and local test services. The trust regression does not install a root certificate. No manual business UAT is requested for this backend checkpoint. The M1 temporary certificate cleanup remains separately open as documented in the M1 evidence.
+## Upload and storage notes
 
-## Storage and dependencies
+Authentication/CSRF checks occur before upload consumption and again before acceptance. One receive/publication slot bounds concurrent memory. Incremental multipart parsing enforces file/field/header/total-size bounds and a receive timeout. Bytes remain in bounded memory until encrypted publication; no plaintext upload spool files are created. The STAGING receipt is the durable acceptance record; the status route reports current READY/FAILED state. Failed/interrupted uploads remain visible.
 
-Business migration 2 adds implementation metadata for review membership, observed action context, timezone carry and fact immutability. The approved version-1 DDL and preserved LLD snapshots remain unchanged. Auth remains at its existing migration 2. A store records and verifies migration checksums; do not edit an already applied migration to upgrade an installation.
+Business migrations 3–6 add lifecycle/correction/audit-head metadata, document status/selection, action blockers and immutable action-criteria references. Applied migrations 1/2 and approved version-1 DDL were preserved. Version-2 upgrade and checksum-failure tests pass. Business schema is version 6; auth remains version 2.
 
-The locked environment contains 95 Python distributions. `tzdata` was added for IANA timezone rules on Windows; `defusedxml`, already present transitively, is now a declared dependency for DOCX XML preflight. Dependency metadata and source hashes are recorded alongside the test results. Starlette's existing AnyIO deprecation warning remains non-fatal; it is not a failed test.
+The locked environment contains 96 Python distributions. Added `python-multipart` 0.0.32 provides incremental parsing; its Apache-2.0 license is retained in `dependency-licenses/`. The earlier Windows tzdata addition and explicit defusedxml declaration remain. Dependency metadata, source hashes and environment versions accompany this evidence.
+
+Next milestone: **Phase 1 M3 — worker and AI**. Phase 2 and later phases have not started.

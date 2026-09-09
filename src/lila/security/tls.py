@@ -71,6 +71,7 @@ def server_context(directory: Path):
     import win32pipe
     import win32file
     import win32event
+    import pywintypes
     from lila.security.windows import security_attributes
     from lila.runtime.control_pipe import overlapped, finish
     name = rf"\\.\pipe\LILAKey-{uuid4()}"
@@ -79,30 +80,49 @@ def server_context(directory: Path):
         1,8192,8192,2000,security_attributes())
     done = Event()
     errors = []
+    progress = {'stage':'waiting','bytes_written':0}
     def supply():
         operation = overlapped()
+        key_bytes = None
         try:
-            status = win32pipe.ConnectNamedPipe(handle,operation)
-            if status in (0,535):
-                win32event.SetEvent(operation.hEvent)
-            finish(handle,operation,5000)
-            operation.hEvent.Close()
-            operation = overlapped()
-            status,_ = win32file.WriteFile(handle,unprotect((directory/"leaf.key.dpapi").read_bytes()),operation)
+            try:
+                status = win32pipe.ConnectNamedPipe(handle,operation)
+            except pywintypes.error as exc:
+                if exc.winerror != 535:  # ERROR_PIPE_CONNECTED: reader won the race.
+                    raise
+                status = 535
             if status == 997:
                 finish(handle,operation,5000)
+            elif status not in (0,535,None):
+                raise RuntimeError('TLS key pipe connection failed')
+            progress['stage']='connected'
+            operation.hEvent.Close()
+            operation = overlapped()
+            # An overlapped write may still reference the supplied buffer after
+            # WriteFile returns. Keep it alive through completion and reader close.
+            key_bytes = unprotect((directory/"leaf.key.dpapi").read_bytes())
+            status,_ = win32file.WriteFile(handle,key_bytes,operation)
+            if status == 997:
+                progress['bytes_written']=finish(handle,operation,5000)
+            else:
+                progress['bytes_written']=win32file.GetOverlappedResult(handle,operation,True)
+            progress['stage']='written'
             done.wait(10)
         except BaseException as exc:
-            errors.append(type(exc).__name__)
+            errors.append((type(exc).__name__,getattr(exc,'winerror',None)))
         finally:
             operation.hEvent.Close()
             handle.Close()
+            key_bytes = None
     thread = Thread(target=supply,daemon=True,name="lila-tls-key")
     thread.start()
     try:
         context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
         context.minimum_version = ssl.TLSVersion.TLSv1_2
-        context.load_cert_chain(str(directory / "leaf.pem"), name)
+        try:
+            context.load_cert_chain(str(directory / "leaf.pem"), name)
+        except ssl.SSLError:
+            raise RuntimeError(f"TLS key channel failed: {progress}, errors={errors}") from None
         if errors:
             raise RuntimeError("TLS private-key load failed")
         return context

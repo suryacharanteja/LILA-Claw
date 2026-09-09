@@ -65,6 +65,10 @@ class Ledger:
             action = str(uuid4())
             db.execute("INSERT INTO actions VALUES(?,?,?,?,?,?,?,NULL,NULL,NULL,'PREPARED',?,1,?)",(action,body["logical_step_key"],body["application_id"],body["run_id"],body["kind"],body["payload_version"],body["draft_id"],body["generation"],self.stamp()))
             db.execute("INSERT INTO action_contexts VALUES(?,?,?)",(action,domain,tab_id))
+            criteria_version = db.execute('SELECT t.criteria_version FROM tasks t JOIN runs r ON r.task_id=t.id WHERE r.id=?',(body['run_id'],)).fetchone()[0]
+            db.execute('INSERT INTO action_criteria VALUES(?,?)',(action,criteria_version))
+            job = db.execute('SELECT job_id FROM applications WHERE id=?',(body['application_id'],)).fetchone()[0]
+            self._classify(db,body['run_id'],job)
             self.event(db,"ACTION_PREPARED","action",action,1)
             return self.receipt(action,1,"PREPARED")
         return self.command(worker_id,body["command_id"],["proposal",body,domain,tab_id],change)
@@ -87,6 +91,8 @@ class Ledger:
             raise DomainError('BROWSER_CAPABILITY_CHANGED',403)
         if not self._facts_ready(db,action["draft_id"],account):
             raise DomainError("FACTS_REQUIRED",422)
+        from .grounding import validate_draft
+        validate_draft(self,db,action["draft_id"],account)
         artifact = db.execute("SELECT artifact_version FROM drafts WHERE id=?",(action["draft_id"],)).fetchone()[0]
         selected = db.execute('SELECT version_id FROM selected_documents WHERE account_id=?',(account,)).fetchone()
         if artifact and selected and artifact!=selected[0]:
@@ -97,6 +103,13 @@ class Ledger:
                 raise DomainError("ARTIFACT_NOT_READY",422)
             self.artifacts.read_in_transaction(db,artifact,account)
         if action["kind"]=="submit_application":
+            criteria_row = db.execute('SELECT t.criteria_version,c.criteria_version,j.metadata_version FROM actions a JOIN runs r ON r.id=a.run_id JOIN tasks t ON t.id=r.task_id JOIN action_criteria c ON c.action_id=a.id JOIN applications p ON p.id=a.application_id JOIN jobs j ON j.id=p.job_id WHERE a.id=?',(action['id'],)).fetchone()
+            if not criteria_row or criteria_row[0]!=criteria_row[1]:
+                raise DomainError('CRITERIA_CHANGED',422)
+            from .criteria import evaluate
+            classification = evaluate(self.value(db,criteria_row[0]),self.value(db,criteria_row[2]) if criteria_row[2] else {})
+            if classification['eligibility']!='ELIGIBLE':
+                raise DomainError('MANDATORY_CRITERIA_UNRESOLVED' if classification['eligibility']=='REVIEW' else 'CANDIDATE_EXCLUDED',422)
             self._identity_ready(db,action["application_id"])
             guard = db.execute("SELECT action_id FROM submission_guards WHERE application_id=?",(action["application_id"],)).fetchone()
             if guard and guard[0] != action["id"]:
@@ -187,7 +200,7 @@ class Ledger:
             try:
                 return self.writer.call(change)
             except DomainError as exc:
-                if exc.code in {'BROWSER_CAPABILITY_CHANGED','FACTS_REQUIRED','ARTIFACT_NOT_READY','ARTIFACT_CORRUPT','DOCUMENT_VERSION_CHANGED','POLICY_REQUIRED','POLICY_CHANGED','APPROVAL_REQUIRED','ACTION_REJECTED','ACTION_LIMIT','BUDGET_LIMIT','READINESS_BLOCKED','EXECUTION_PAUSED'}:
+                if exc.code in {'CRITERIA_CHANGED','MANDATORY_CRITERIA_UNRESOLVED','CANDIDATE_EXCLUDED','BROWSER_CAPABILITY_CHANGED','FACTS_REQUIRED','ARTIFACT_NOT_READY','ARTIFACT_CORRUPT','DOCUMENT_VERSION_CHANGED','POLICY_REQUIRED','POLICY_CHANGED','APPROVAL_REQUIRED','ACTION_REJECTED','ACTION_LIMIT','BUDGET_LIMIT','READINESS_BLOCKED','EXECUTION_PAUSED'}:
                     code = exc.code
                     def blocked(db):
                         prior = db.execute('SELECT reason FROM action_blockers WHERE action_id=?',(action_id,)).fetchone()

@@ -1,0 +1,2487 @@
+{
+  "status": "PROPOSED_ENGINEERING_LABELS",
+  "source": "tests/domain/test_ai.py",
+  "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+  "cases": [
+    {
+      "test_id": "T-FACT-001",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-0",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 0."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-0",
+            "text": "I developed Python applications for fixture project 0."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-002",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-1",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 1."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-1",
+            "text": "I developed Python applications for fixture project 1."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-003",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-2",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 2."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-2",
+            "text": "I developed Python applications for fixture project 2."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-004",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-3",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 3."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-3",
+            "text": "I developed Python applications for fixture project 3."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-005",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-4",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 4."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-4",
+            "text": "I developed Python applications for fixture project 4."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-006",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-5",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 5."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-5",
+            "text": "I developed Python applications for fixture project 5."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-007",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-6",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 6."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-6",
+            "text": "I developed Python applications for fixture project 6."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-008",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-7",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 7."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-7",
+            "text": "I developed Python applications for fixture project 7."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-009",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-8",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 8."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-8",
+            "text": "I developed Python applications for fixture project 8."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-010",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-9",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 9."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-9",
+            "text": "I developed Python applications for fixture project 9."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-011",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-10",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 10."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-10",
+            "text": "I developed Python applications for fixture project 10."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-012",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-11",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 11."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-11",
+            "text": "I developed Python applications for fixture project 11."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-013",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-12",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 12."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-12",
+            "text": "I developed Python applications for fixture project 12."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-014",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-13",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 13."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-13",
+            "text": "I developed Python applications for fixture project 13."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-015",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-14",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 14."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-14",
+            "text": "I developed Python applications for fixture project 14."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-016",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-15",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 15."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-15",
+            "text": "I developed Python applications for fixture project 15."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-017",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-16",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 16."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-16",
+            "text": "I developed Python applications for fixture project 16."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-018",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-17",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 17."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-17",
+            "text": "I developed Python applications for fixture project 17."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-019",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-18",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 18."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-18",
+            "text": "I developed Python applications for fixture project 18."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-020",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-19",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 19."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-19",
+            "text": "I developed Python applications for fixture project 19."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-021",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-20",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 20."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-20",
+            "text": "I developed Python applications for fixture project 20."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-022",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-21",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 21."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-21",
+            "text": "I developed Python applications for fixture project 21."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-023",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-22",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 22."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-22",
+            "text": "I developed Python applications for fixture project 22."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-024",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-23",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 23."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-23",
+            "text": "I developed Python applications for fixture project 23."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-025",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-24",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 24."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-24",
+            "text": "I developed Python applications for fixture project 24."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-026",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-25",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 25."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-25",
+            "text": "I developed Python applications for fixture project 25."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-027",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-26",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 26."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-26",
+            "text": "I developed Python applications for fixture project 26."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-028",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-27",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 27."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-27",
+            "text": "I developed Python applications for fixture project 27."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-029",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-28",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 28."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-28",
+            "text": "I developed Python applications for fixture project 28."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-030",
+      "category": "Known",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-29",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 29."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-29",
+            "text": "I developed Python applications for fixture project 29."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Exact current fact text is supported.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-031",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-30",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 30."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-30",
+            "text": "I developed Python applications for fixture project 30."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-032",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-31",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 31."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-31",
+            "text": "I developed Python applications for fixture project 31."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-033",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-32",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 32."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-32",
+            "text": "I developed Python applications for fixture project 32."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-034",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-33",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 33."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-33",
+            "text": "I developed Python applications for fixture project 33."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-035",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-34",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 34."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-34",
+            "text": "I developed Python applications for fixture project 34."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-036",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-35",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 35."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-35",
+            "text": "I developed Python applications for fixture project 35."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-037",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-36",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 36."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-36",
+            "text": "I developed Python applications for fixture project 36."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-038",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-37",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 37."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-37",
+            "text": "I developed Python applications for fixture project 37."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-039",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-38",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 38."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-38",
+            "text": "I developed Python applications for fixture project 38."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-040",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-39",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 39."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-39",
+            "text": "I developed Python applications for fixture project 39."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-041",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-40",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 40."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-40",
+            "text": "I developed Python applications for fixture project 40."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-042",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-41",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 41."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-41",
+            "text": "I developed Python applications for fixture project 41."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-043",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-42",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 42."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-42",
+            "text": "I developed Python applications for fixture project 42."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-044",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-43",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 43."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-43",
+            "text": "I developed Python applications for fixture project 43."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-045",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-44",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 44."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-44",
+            "text": "I developed Python applications for fixture project 44."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-046",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-45",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 45."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-45",
+            "text": "I developed Python applications for fixture project 45."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-047",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-46",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 46."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-46",
+            "text": "I developed Python applications for fixture project 46."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-048",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-47",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 47."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-47",
+            "text": "I developed Python applications for fixture project 47."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-049",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-48",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 48."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-48",
+            "text": "I developed Python applications for fixture project 48."
+          }
+        ],
+        "missing_fields": [
+          "salary"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-050",
+      "category": "Missing",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-49",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 49."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-49",
+            "text": "I developed Python applications for fixture project 49."
+          }
+        ],
+        "missing_fields": [
+          "work_authorization"
+        ]
+      },
+      "expected": "BLOCK",
+      "reason": "Required field is missing; do not invent its value.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-051",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-50",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-50",
+            "text": "I developed Python applications for fixture project 50."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-052",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-51",
+            "text": "I developed Python applications for fixture project 51."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-053",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-52",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-52",
+            "text": "I developed Python applications for fixture project 52."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-054",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-53",
+            "text": "I developed Python applications for fixture project 53."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-055",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-54",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-54",
+            "text": "I developed Python applications for fixture project 54."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-056",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-55",
+            "text": "I developed Python applications for fixture project 55."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-057",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-56",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-56",
+            "text": "I developed Python applications for fixture project 56."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-058",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-57",
+            "text": "I developed Python applications for fixture project 57."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-059",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-58",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-58",
+            "text": "I developed Python applications for fixture project 58."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-060",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-59",
+            "text": "I developed Python applications for fixture project 59."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-061",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-60",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-60",
+            "text": "I developed Python applications for fixture project 60."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-062",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-61",
+            "text": "I developed Python applications for fixture project 61."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-063",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-62",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-62",
+            "text": "I developed Python applications for fixture project 62."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-064",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-63",
+            "text": "I developed Python applications for fixture project 63."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-065",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-64",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-64",
+            "text": "I developed Python applications for fixture project 64."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-066",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-65",
+            "text": "I developed Python applications for fixture project 65."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-067",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-66",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-66",
+            "text": "I developed Python applications for fixture project 66."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-068",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-67",
+            "text": "I developed Python applications for fixture project 67."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-069",
+      "category": "Contradictory or stale",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-68",
+          "field_key": "experience_summary",
+          "text": "Owner corrected this fact."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-68",
+            "text": "I developed Python applications for fixture project 68."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-070",
+      "category": "Contradictory or stale",
+      "current_facts": [],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-69",
+            "text": "I developed Python applications for fixture project 69."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "The referenced fact is absent or its current text has changed.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-071",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-70",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 70."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-70",
+            "text": "I developed Python applications for fixture project 70."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-072",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-71",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 71."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-71",
+            "text": "I developed Python applications for fixture project 71."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-073",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-72",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 72."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-72",
+            "text": "I developed Python applications for fixture project 72."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-074",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-73",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 73."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-73",
+            "text": "I developed Python applications for fixture project 73."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-075",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-74",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 74."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-74",
+            "text": "I developed Python applications for fixture project 74."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-076",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-75",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 75."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-75",
+            "text": "I developed Python applications for fixture project 75."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-077",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-76",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 76."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-76",
+            "text": "I developed Python applications for fixture project 76."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-078",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-77",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 77."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-77",
+            "text": "I developed Python applications for fixture project 77."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-079",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-78",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 78."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-78",
+            "text": "I developed Python applications for fixture project 78."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-080",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-79",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 79."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "\n"
+          },
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-79",
+            "text": "I developed Python applications for fixture project 79."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "ACCEPT",
+      "reason": "Whitespace plus exact fact text introduces no new claim.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-081",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-80",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 80."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-80",
+            "text": "I developed Python applications for fixture project 80."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-082",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-81",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 81."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-81",
+            "text": "I developed Python applications for fixture project 81."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-083",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-82",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 82."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-82",
+            "text": "I developed Python applications for fixture project 82."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-084",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-83",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 83."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-83",
+            "text": "I developed Python applications for fixture project 83."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-085",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-84",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 84."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-84",
+            "text": "I developed Python applications for fixture project 84."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-086",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-85",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 85."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-85",
+            "text": "I developed Python applications for fixture project 85."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-087",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-86",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 86."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-86",
+            "text": "I developed Python applications for fixture project 86."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-088",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-87",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 87."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-87",
+            "text": "I developed Python applications for fixture project 87."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-089",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-88",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 88."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-88",
+            "text": "I developed Python applications for fixture project 88."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-090",
+      "category": "Narrative",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-89",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 89."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-89",
+            "text": "I developed Python applications for fixture project 89."
+          },
+          {
+            "kind": "connector",
+            "fact_ref": null,
+            "text": "I led a team of 100 and earned a doctorate."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Connector introduces unsupported leadership and education claims.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-091",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-90",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 90."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-90",
+            "text": "I developed Python applications for fixture project 90. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-092",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-91",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 91."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-91",
+            "text": "I developed Python applications for fixture project 91. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-093",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-92",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 92."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-92",
+            "text": "I developed Python applications for fixture project 92. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-094",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-93",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 93."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-93",
+            "text": "I developed Python applications for fixture project 93. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-095",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-94",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 94."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-94",
+            "text": "I developed Python applications for fixture project 94. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-096",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-95",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 95."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-95",
+            "text": "I developed Python applications for fixture project 95. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-097",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-96",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 96."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-96",
+            "text": "I developed Python applications for fixture project 96. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-098",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-97",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 97."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-97",
+            "text": "I developed Python applications for fixture project 97. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-099",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-98",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 98."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-98",
+            "text": "I developed Python applications for fixture project 98. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    },
+    {
+      "test_id": "T-FACT-100",
+      "category": "Material edit",
+      "current_facts": [
+        {
+          "version_id": "fixture-fact-99",
+          "field_key": "experience_summary",
+          "text": "I developed Python applications for fixture project 99."
+        }
+      ],
+      "proposed_output": {
+        "segments": [
+          {
+            "kind": "fact",
+            "fact_ref": "fixture-fact-99",
+            "text": "I developed Python applications for fixture project 99. I also have ten years of leadership experience."
+          }
+        ],
+        "missing_fields": []
+      },
+      "expected": "BLOCK",
+      "reason": "Edited fact text adds unsupported leadership experience.",
+      "review_status": "PENDING"
+    }
+  ]
+}

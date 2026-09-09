@@ -35,8 +35,14 @@ class Reads:
         position = self.cursor_position(after,scope)
         def read(db):
             rows = db.execute('SELECT cursor,event_id,entity_type,entity_id,revision,kind,summary_json,occurred_at FROM events WHERE cursor>? ORDER BY cursor LIMIT ?',(position,limit)).fetchall()
-            events = [{'cursor':self.cursor(scope,r[0]),'event_id':r[1],'entity_type':r[2],'entity_id':r[3],'revision':r[4],'kind':r[5],'summary':json.loads(r[6]),'occurred_at':r[7]} for r in rows]
-            return {'events':events,'next_cursor':events[-1]['cursor'] if events else after}
+            events = []
+            for r in rows:
+                stored = json.loads(r[6])
+                summary = {key:stored[key] for key in ('state','message') if key in stored}
+                if 'message' not in summary and ('reason' in stored or 'code' in stored):
+                    summary['message'] = stored.get('reason',stored.get('code'))
+                events.append({'cursor':r[0],'event_id':r[1],'entity_type':r[2],'entity_id':r[3],'revision':r[4],'kind':r[5],'summary':summary,'occurred_at':r[7]})
+            return {'events':events,'next_cursor':self.cursor(scope,rows[-1][0]) if rows else after}
         return self.writer.call(read,transaction=False)
 
     def list_entities(self,principal,kind,account_id,after=None,limit=100):
@@ -67,6 +73,9 @@ class Reads:
                 item = dict(zip(columns[1:],row[1:]))
                 if 'value_json' in item:
                     item['value'] = json.loads(item.pop('value_json'))
+                    item['revision'] = db.execute('SELECT count(*) FROM fact_versions WHERE fact_id=?',(item['id'],)).fetchone()[0]
+                    proposals = db.execute("SELECT v.id,c.canonical_json,v.source_version FROM fact_versions v JOIN content_versions c ON c.id=v.value_version WHERE v.fact_id=? AND v.status='PROPOSED' AND v.rowid>coalesce((SELECT max(rowid) FROM fact_versions WHERE fact_id=? AND status='VERIFIED'),0)",(item['id'],item['id'])).fetchall()
+                    item['proposals'] = [{'version_id':v,'value':json.loads(value),'source_version':source} for v,value,source in proposals]
                 items.append(item)
             revision = db.execute('SELECT coalesce(max(cursor),0) FROM events').fetchone()[0]
             return {'items':items,'next_cursor':self.cursor(scope,rows[-1][0]) if more else None,'as_of_revision':revision,'coverage':'retained_records'}

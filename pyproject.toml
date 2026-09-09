@@ -4,7 +4,7 @@ version = "0.1.0.dev0"
 requires-python = ">=3.12,<3.13"
 
 [tool.pytest.ini_options]
-testpaths = ["tests/foundation", "tests/trust"]
+testpaths = ["tests/foundation", "tests/trust", "tests/domain"]
 pythonpath = ["src"]
 addopts = "-ra"
 

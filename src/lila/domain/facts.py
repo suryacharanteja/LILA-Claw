@@ -27,8 +27,11 @@ class Facts:
             value = self.content(db,"fact_value",body["value"])
             version = str(uuid4())
             db.execute("INSERT INTO fact_versions VALUES(?,?,?,?,?,?,?)",(version,row[0],value,source,status,row[1],self.stamp()))
-            db.execute("UPDATE facts SET current_version=? WHERE id=?",(version,row[0]))
-            if row[1]:
+            existing_status = db.execute('SELECT status FROM fact_versions WHERE id=?',(row[1],)).fetchone() if row[1] else None
+            keep_verified = status=='PROPOSED' and existing_status==('VERIFIED',)
+            if not keep_verified:
+                db.execute("UPDATE facts SET current_version=? WHERE id=?",(version,row[0]))
+            if row[1] and not keep_verified:
                 approvals = db.execute("SELECT DISTINCT m.approval_id FROM approval_members m JOIN actions a ON a.id=m.action_id JOIN draft_facts f ON f.draft_id=a.draft_id WHERE f.fact_version_id=?",(row[1],)).fetchall()
                 for (approval,) in approvals:
                     db.execute("UPDATE approvals SET state='REVOKED',revision=revision+1 WHERE id=? AND state='ACTIVE'",(approval,))
@@ -46,6 +49,8 @@ class Facts:
             application = db.execute("SELECT account_id FROM applications WHERE id=?",(identifier(application_id),)).fetchone()
             if not application:
                 raise DomainError("NOT_FOUND",404)
+            from .grounding import validate_payload
+            validate_payload(self,db,application[0],value,fact_versions)
             draft = str(uuid4())
             content = self.content(db,"draft",value)
             if artifact_version:

@@ -1,0 +1,40 @@
+{
+  "foundation": {
+    "tests": 27,
+    "failures": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "trust": {
+    "tests": 35,
+    "failures": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "domain": {
+    "tests": 249,
+    "failures": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "typecheck": {
+    "exit_code": 0
+  },
+  "build": {
+    "exit_code": 0
+  },
+  "extension_tests": {
+    "exit_code": 0,
+    "tests": 11,
+    "pass": 11,
+    "fail": 0,
+    "skipped": 0
+  },
+  "approved_lld": {
+    "files_checked": 15,
+    "unchanged": true
+  },
+  "status": "IN_PROGRESS",
+  "external_provider_calls": 0,
+  "qualification": "Engineering fixtures only; no owner/reviewer label approval or live provider qualification implied."
+}

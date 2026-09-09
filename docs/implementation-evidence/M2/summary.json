@@ -1,5 +1,5 @@
 {
-  "status": "In progress; remaining exit criteria are documented in README.md",
+  "status": "Engineering Verified; integration/UAT/release pending",
   "test_results": {
     "foundation": {
       "tests": 27,
@@ -14,19 +14,21 @@
       "skipped": 0
     },
     "domain": {
-      "tests": 29,
+      "tests": 53,
       "failures": 0,
       "errors": 0,
       "skipped": 0
     }
   },
-  "total_tests": 75,
+  "total_tests": 99,
   "typescript": "passed",
   "web_build": "passed",
-  "dependencies": 95,
+  "business_schema_version": 6,
+  "auth_schema_version": 2,
+  "dependencies": 96,
   "preserved_lld_hashes_verified": 15,
-  "uat": "Not performed; backend checkpoint",
-  "production_execution": "Blocked pending worker and browser implementation",
-  "next": "Complete remaining M2 exit criteria before M3",
-  "m1_certificate_cleanup": "Still pending; no trust-store mutation attempted in this checkpoint"
+  "approved_protocol_copy": "byte-identical",
+  "production_execution": "Blocked; worker/browser implementation pending",
+  "next": "Phase 1 M3 worker and AI",
+  "m1_certificate_cleanup": "Pending separately; no trust-store mutation attempted"
 }

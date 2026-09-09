@@ -1,0 +1,139 @@
+## foundation
+
+...........................                                              [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\starlette\testclient.py:53
+  D:\AI\LILA-Claw\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+
+## trust
+
+...................................                                      [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\starlette\testclient.py:53
+  D:\AI\LILA-Claw\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+
+## domain
+
+........................................................................ [ 28%]
+........................................................................ [ 57%]
+........................................................................ [ 86%]
+.................................                                        [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\starlette\testclient.py:53
+  D:\AI\LILA-Claw\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+
+## typecheck
+
+
+> lila-claw-foundation@0.1.0 typecheck
+> tsc --noEmit
+
+
+
+## build
+
+
+> lila-claw-foundation@0.1.0 build
+> vite build --config web/vite.config.ts
+
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 27 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                [39m[1m[2m  0.29 kB[22m[1m[22m[2m │ gzip:  0.23 kB[22m
+[2mdist/[22m[36massets/index-D5V_IQik.js  [39m[1m[2m193.89 kB[22m[1m[22m[2m │ gzip: 61.04 kB[22m
+[32m✓ built in 553ms[39m
+
+
+## extension_tests
+
+TAP version 13
+# Subtest: reports only in a verified session and waits for acknowledgement
+ok 1 - reports only in a verified session and waits for acknowledgement
+  ---
+  duration_ms: 1.3602
+  type: 'test'
+  ...
+# Subtest: renewal and disconnect fence old acknowledgements
+ok 2 - renewal and disconnect fence old acknowledgements
+  ---
+  duration_ms: 0.1481
+  type: 'test'
+  ...
+# Subtest: capability acknowledgement cannot enable execution
+ok 3 - capability acknowledgement cannot enable execution
+  ---
+  duration_ms: 0.1112
+  type: 'test'
+  ...
+# Subtest: failed send invalidates session rather than reporting success
+ok 4 - failed send invalidates session rather than reporting success
+  ---
+  duration_ms: 0.1255
+  type: 'test'
+  ...
+# Subtest: allowlist, duplicates, bounds and adapter identifiers are enforced
+ok 5 - allowlist, duplicates, bounds and adapter identifiers are enforced
+  ---
+  duration_ms: 0.2603
+  type: 'test'
+  ...
+# Subtest: socket authenticates before reporting empty qualified capabilities
+ok 6 - socket authenticates before reporting empty qualified capabilities
+  ---
+  duration_ms: 20.4975
+  type: 'test'
+  ...
+# Subtest: forged server proof closes socket without reporting capabilities
+ok 7 - forged server proof closes socket without reporting capabilities
+  ---
+  duration_ms: 1.9678
+  type: 'test'
+  ...
+# Subtest: reply from disconnected generation cannot revive readiness
+ok 8 - reply from disconnected generation cannot revive readiness
+  ---
+  duration_ms: 1.3112
+  type: 'test'
+  ...
+# Subtest: client HMAC matches server transcript and verifies pinned server exactly once
+ok 9 - client HMAC matches server transcript and verifies pinned server exactly once
+  ---
+  duration_ms: 14.6487
+  type: 'test'
+  ...
+# Subtest: signature from another handshake cannot authenticate the client
+ok 10 - signature from another handshake cannot authenticate the client
+  ---
+  duration_ms: 2.1227
+  type: 'test'
+  ...
+# Subtest: strict base64url rejects malformed, padded and wrong-sized key material
+ok 11 - strict base64url rejects malformed, padded and wrong-sized key material
+  ---
+  duration_ms: 0.2664
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 294.1478
+
