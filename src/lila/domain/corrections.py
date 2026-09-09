@@ -52,7 +52,9 @@ class Corrections:
         db.execute('INSERT INTO outcomes VALUES(?,?,?,?,?,?,?,?)',(str(uuid4()),action_id,outcome,int(not_submitted_proven),'SYSTEM',version,previous[0] if previous else None,self.stamp()))
         reservation = db.execute('SELECT id,window_id,state FROM reservations WHERE action_id=?',(action_id,)).fetchone()
         if reservation:
-            new_state = {'CONFIRMED':'CONSUMED','FAILED':'RELEASED','UNCERTAIN':'UNCERTAIN'}[outcome]
+            # A proven failed submission still consumed an attempted action.
+            # Only cancellation before send claim releases action allowance.
+            new_state = {'CONFIRMED':'CONSUMED','FAILED':'CONSUMED','UNCERTAIN':'UNCERTAIN'}[outcome]
             submitted = int(new_state=='CONSUMED')-int(reservation[2]=='CONSUMED')
             reserved = int(new_state in {'RESERVED','UNCERTAIN'})-int(reservation[2] in {'RESERVED','UNCERTAIN'})
             self._window_delta(db,reservation[1],submitted=submitted,reserved=reserved)

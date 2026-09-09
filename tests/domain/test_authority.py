@@ -50,3 +50,14 @@ def test_single_executor_and_owner_report_survives_old_action_failure(domain):
     assert domain.writer.call(lambda db:db.execute('SELECT effective_outcome FROM applications WHERE id=?',(app,)).fetchone()[0])=='USER_REPORTED'
     with pytest.raises(DomainError,match='DUPLICATE_APPLICATION'):
         domain.writer.call(lambda db:domain._identity_ready(db,app))
+
+
+def test_review_preparation_replay_and_material_details(domain):
+    a,_,_,_,_ = action(domain)
+    command = uid()
+    result = domain.prepare_review([a],principal=domain.owner,command_id=command)
+    assert domain.prepare_review([a],principal=domain.owner,command_id=command)==result
+    preview = domain.review(result['review_id'])
+    assert preview['actions'][0]['destination']=='https://www.linkedin.com/jobs/view/123/'
+    assert preview['actions'][0]['answers']=={'name':'Fixture Owner'}
+    assert preview['actions'][0]['facts_current'] is True

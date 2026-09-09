@@ -1,0 +1,150 @@
+{
+  "milestone_status": "IN_PROGRESS",
+  "scope": "Local deterministic evidence; not provider, browser or sponsor acceptance",
+  "cases": [
+    {
+      "acceptance_id": "T-COST-01",
+      "description": "Per-run action cap",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[CONFIRMED]",
+          "source": "tests/domain/test_action_run_limits.py",
+          "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[FAILED]",
+          "source": "tests/domain/test_action_run_limits.py",
+          "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_action_run_limits::test_run_cap_counts_attempts_independently_of_daily_cap[UNCERTAIN]",
+          "source": "tests/domain/test_action_run_limits.py",
+          "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "acceptance_id": "T-COST-02",
+      "description": "Cross-run daily cap",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_controls::test_daily_cap_and_confirmed_duplicate",
+          "source": "tests/domain/test_controls.py",
+          "source_sha256": "6f038946a1f7c782399bb6d66ebc9faa0b43bdbd21f03cbdad3519f3d4605802",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_concurrent_runs_cannot_reserve_beyond_shared_daily_budget",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "acceptance_id": "T-COST-03",
+      "description": "Timezone edit",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_timezone_roundtrip_and_late_usage_do_not_reset_or_double_budget",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_boundaries::test_timezone_changes_roundtrip_and_late_release",
+          "source": "tests/domain/test_boundaries.py",
+          "source_sha256": "2d8348f8b2aaae2c8dbe186d7b4f37014d307a02b7ac2fe6359c8f98c907b156",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "acceptance_id": "T-COST-04",
+      "description": "Invocation timeout",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_ai::test_ai_claim_timeout_late_usage_and_no_double_charge",
+          "source": "tests/domain/test_ai.py",
+          "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai::test_provider_transport_contract[timeout]",
+          "source": "tests/domain/test_ai.py",
+          "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "acceptance_id": "T-COST-05",
+      "description": "Unknown or stale rates",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates0]",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates1]",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates2]",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_unknown_or_invalid_rates_cannot_reserve_budget[rates3]",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai::test_ai_stale_prices_and_disabled_provider",
+          "source": "tests/domain/test_ai.py",
+          "source_sha256": "3bcc9b326d66f4048a5cdb7977c2bf1e4210340a160b4ab6d0157527357d2369",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "acceptance_id": "T-COST-06",
+      "description": "Reservation reconciliation",
+      "status": "LOCAL_EVIDENCE_PASSED",
+      "tests": [
+        {
+          "test_id": "tests.domain.test_worker_recovery::test_restart_releases_unsent_ai_and_retains_claimed_budget",
+          "source": "tests/domain/test_worker_recovery.py",
+          "source_sha256": "c06a6b47b0ef8de13ecf02db64187c686055994d0b1692caa4a9b9b8f3893117",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_ai_recovery_matrix::test_replacement_worker_cannot_claim_or_reconcile_predecessor_invocation",
+          "source": "tests/domain/test_ai_recovery_matrix.py",
+          "source_sha256": "dca8735abd47c4f0e372b847ca8ff0f8940b7fcc0c3d1c0a4b3f3c67937b8f42",
+          "result": "passed"
+        },
+        {
+          "test_id": "tests.domain.test_action_run_limits::test_failed_attempt_migration_repairs_linked_windows_once",
+          "source": "tests/domain/test_action_run_limits.py",
+          "source_sha256": "145becd67c77c095f0d55a5727caf74a5e3305c14abe74b3acd061cfcb6aa430",
+          "result": "passed"
+        }
+      ]
+    }
+  ]
+}

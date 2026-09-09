@@ -21,7 +21,7 @@ def open_store(path: Path, key: bytes, store: str):
         for pragma in ("foreign_keys=ON", "journal_mode=WAL", "synchronous=FULL", "temp_store=MEMORY", "busy_timeout=5000"):
             db.execute("PRAGMA " + pragma)
         version = db.execute("PRAGMA user_version").fetchone()[0]
-        if version not in ((0,1,2,3,4,5) if store=='business' else (0,1,2)):
+        if version not in ((0,1,2,3,4,5,6,7,8,9,10,11) if store=='business' else (0,1,2)):
             raise ValueError("unsupported schema version")
         if version == 0:
             apply_initial_schema(db, store)
@@ -48,39 +48,17 @@ def open_store(path: Path, key: bytes, store: str):
             if not actual or actual[0] != hashlib.sha256((ROOT/filename).read_bytes()).hexdigest():
                 raise RuntimeError("migration checksum mismatch")
         if store=='business':
-            filename = '0003_business_lifecycle.sql'
-            digest = hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()
-            if db.execute('PRAGMA user_version').fetchone()[0]==2:
-                try:
-                    script = (ROOT/filename).read_text(encoding='utf-8')
-                    db.executescript("BEGIN IMMEDIATE;\n"+script+f"\nINSERT INTO schema_migrations VALUES(3,'{digest}',strftime('%Y-%m-%dT%H:%M:%fZ','now'));\nPRAGMA user_version=3;\nCOMMIT;")
-                except BaseException:
-                    db.rollback()
-                    raise
-            if db.execute('SELECT checksum FROM schema_migrations WHERE version=3').fetchone()!=(digest,):
-                raise RuntimeError('migration checksum mismatch')
-            filename = '0004_business_documents.sql'
-            digest = hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()
-            if db.execute('PRAGMA user_version').fetchone()[0]==3:
-                try:
-                    script = (ROOT/filename).read_text(encoding='utf-8')
-                    db.executescript("BEGIN IMMEDIATE;\n"+script+f"\nINSERT INTO schema_migrations VALUES(4,'{digest}',strftime('%Y-%m-%dT%H:%M:%fZ','now'));\nPRAGMA user_version=4;\nCOMMIT;")
-                except BaseException:
-                    db.rollback()
-                    raise
-            if db.execute('SELECT checksum FROM schema_migrations WHERE version=4').fetchone()!=(digest,):
-                raise RuntimeError('migration checksum mismatch')
-            filename = '0005_business_action_blockers.sql'
-            digest = hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()
-            if db.execute('PRAGMA user_version').fetchone()[0]==4:
-                try:
-                    script = (ROOT/filename).read_text(encoding='utf-8')
-                    db.executescript("BEGIN IMMEDIATE;\n"+script+f"\nINSERT INTO schema_migrations VALUES(5,'{digest}',strftime('%Y-%m-%dT%H:%M:%fZ','now'));\nPRAGMA user_version=5;\nCOMMIT;")
-                except BaseException:
-                    db.rollback()
-                    raise
-            if db.execute('SELECT checksum FROM schema_migrations WHERE version=5').fetchone()!=(digest,):
-                raise RuntimeError('migration checksum mismatch')
+            for target,filename in [(3,'0003_business_lifecycle.sql'),(4,'0004_business_documents.sql'),(5,'0005_business_action_blockers.sql'),(6,'0006_business_action_criteria.sql'),(7,'0007_business_ai.sql'),(8,'0008_business_extraction.sql'),(9,'0009_business_provider_settings.sql'),(10,'0010_business_worker_jobs.sql'),(11,'0011_business_failed_attempts.sql')]:
+                digest = hashlib.sha256((ROOT/filename).read_bytes()).hexdigest()
+                if db.execute('PRAGMA user_version').fetchone()[0]==target-1:
+                    try:
+                        script = (ROOT/filename).read_text(encoding='utf-8')
+                        db.executescript("BEGIN IMMEDIATE;\n"+script+f"\nINSERT INTO schema_migrations VALUES({target},'{digest}',strftime('%Y-%m-%dT%H:%M:%fZ','now'));\nPRAGMA user_version={target};\nCOMMIT;")
+                    except BaseException:
+                        db.rollback()
+                        raise
+                if db.execute('SELECT checksum FROM schema_migrations WHERE version=?',(target,)).fetchone()!=(digest,):
+                    raise RuntimeError('migration checksum mismatch')
         return db
     except BaseException:
         db.close()

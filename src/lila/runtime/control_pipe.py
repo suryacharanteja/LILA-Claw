@@ -149,8 +149,12 @@ def request(install_id, operation):
             break
         except pywintypes.error as exc:
             # Only retry before sending: absence/busy while the preceding client disconnects.
-            if exc.winerror not in (2,231) or time.monotonic()>=deadline:
+            if exc.winerror not in (2,231):
                 raise
+            if time.monotonic()>=deadline:
+                # pywintypes.error is not OSError. Normalize only readiness expiry
+                # so the supervisor can keep its outer startup/recovery deadline.
+                raise TimeoutError('control pipe not ready') from None
             time.sleep(0.02)
     try:
         verify_process(win32pipe.GetNamedPipeServerProcessId(handle))

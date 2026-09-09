@@ -1,13 +1,13 @@
 **********************
 PowerShell transcript start
-Start time: 20260908145512
+Start time: 20260908191438
 Username: CD-G15-5530\charan
 RunAs User: CD-G15-5530\charan
 Configuration Name: 
 Machine: CD-G15-5530 (Microsoft Windows NT 10.0.26200.0)
 Host Application: C:\Users\charan\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
 & ./scripts/verify-m2.ps1
-Process ID: 37868
+Process ID: 16484
 PSVersion: 7.6.5
 PSEdition: Core
 GitCommitId: 7.6.5
@@ -25,5 +25,5 @@ WSManStackVersion: 3.0
 
 **********************
 PowerShell transcript end
-End time: 20260908145531
+End time: 20260908191459
 **********************

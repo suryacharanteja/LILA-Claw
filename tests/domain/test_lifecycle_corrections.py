@@ -58,7 +58,8 @@ def test_conflicting_terminal_outcome_requires_exact_review_and_reconciles_count
     result = domain.confirm_correction(domain.owner,preview['operation_id'],command_id,1,preview['preview_digest'])
     assert result['state']=='APPLIED'
     assert domain.confirm_correction(domain.owner,preview['operation_id'],command_id,1,preview['preview_digest'])==result
-    assert domain.writer.call(lambda db:db.execute('SELECT submitted,reserved_actions FROM budget_windows').fetchone())==(0,0)
+    # Correcting success to proven failure changes the outcome, not the attempt count.
+    assert domain.writer.call(lambda db:db.execute('SELECT submitted,reserved_actions FROM budget_windows').fetchone())==(1,0)
     outcomes = domain.writer.call(lambda db:db.execute('SELECT id,supersedes_id FROM outcomes ORDER BY rowid').fetchall())
     assert len(outcomes)==2 and outcomes[1][1]==outcomes[0][0]
     domain.verify_audit()

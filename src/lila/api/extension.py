@@ -4,8 +4,9 @@ import base64
 import json
 import re
 from uuid import UUID
+from typing import Literal
 from fastapi import Request, WebSocket, WebSocketDisconnect
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict,Field
 from cryptography.hazmat.primitives import serialization
 from lila.api.auth import COOKIE
 from lila.security.sessions import AuthError
@@ -24,6 +25,22 @@ def decode(value):
 class Confirm(BaseModel):
     model_config = ConfigDict(extra="forbid")
     pairing_id: UUID
+
+
+class Capabilities(BaseModel):
+    model_config=ConfigDict(extra='forbid',strict=True)
+    protocol_version:int=Field(ge=1,le=1)
+    tools:list[Literal['inspect_context','discover_jobs','inspect_form','fill_fields','attach_document','advance_step','submit_application','inspect_outcome']]=Field(max_length=8)
+    adapter_ids:list[str]=Field(max_length=32)
+
+
+def capability_report(payload):
+    report=Capabilities.model_validate(payload)
+    if len(set(report.tools))!=len(report.tools) or len(set(report.adapter_ids))!=len(report.adapter_ids):
+        raise ValueError('duplicate capability')
+    if any(not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,99}',name) for name in report.adapter_ids):
+        raise ValueError('invalid adapter identifier')
+    return report.model_dump()
 
 
 def attach_extension(app, sessions, pairing, port, install_id, extension_id):
@@ -118,6 +135,7 @@ def attach_extension(app, sessions, pairing, port, install_id, extension_id):
                 secret = authenticated.pop("session_secret")
                 authenticated["signature"] = encode(authenticated["signature"])
                 await websocket.send_json({"type":"authenticated","payload":authenticated})
+                capabilities=None
                 while True:
                     pairing.validate_session(secret)
                     try:
@@ -128,9 +146,15 @@ def attach_extension(app, sessions, pairing, port, install_id, extension_id):
                     pairing.validate_session(secret)
                     if frame["type"] == "renew":
                         break
+                    if frame['type']=='capabilities':
+                        capabilities=capability_report(frame['payload'])
+                        await websocket.send_json({'type':'capabilities_received','payload':{'accepted':True,'execution_ready':False}})
+                        continue
                     if frame["type"] != "status":
                         raise AuthError("SCOPE_DENIED")
-                    await websocket.send_json({"type":"status","payload":{"execution_ready":False,"blockers":["EXECUTION_NOT_IMPLEMENTED"]}})
+                    if frame['payload']:
+                        raise AuthError('INVALID_FRAME')
+                    await websocket.send_json({"type":"status","payload":{"execution_ready":False,"blockers":["EXECUTION_NOT_IMPLEMENTED"],"capabilities_reported":capabilities is not None}})
         except (AuthError,ValueError,KeyError,TypeError,WebSocketDisconnect,asyncio.TimeoutError):
             try:
                 await websocket.close(code=4401)

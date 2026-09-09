@@ -1,0 +1,1027 @@
+[
+  {
+    "test_id": "M2-b6fec4daba09",
+    "test": "test_artifacts::test_encrypted_publication_corruption_and_recovery",
+    "requirements": [
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "15ec4d2ee4c88dc45ea270076eb3c6941a62914fa259297540db57fa506a7332",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.043",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_artifacts.py"
+  },
+  {
+    "test_id": "M2-aab09f8f55c0",
+    "test": "test_artifacts::test_missing_staging_and_cross_account",
+    "requirements": [
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "15ec4d2ee4c88dc45ea270076eb3c6941a62914fa259297540db57fa506a7332",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.032",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_artifacts.py"
+  },
+  {
+    "test_id": "M2-d38ea2ecbc3d",
+    "test": "test_artifacts::test_invalid_type_archive_traversal_and_docx",
+    "requirements": [
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "15ec4d2ee4c88dc45ea270076eb3c6941a62914fa259297540db57fa506a7332",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.195",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_artifacts.py"
+  },
+  {
+    "test_id": "M2-7bc5d63a54f7",
+    "test": "test_authority::test_explicit_approval_grants_only_exact_members",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "97b218cc1e32832f1fc3b8b670c09527b02ae6773958b2d55d92111346486791",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.045",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_authority.py"
+  },
+  {
+    "test_id": "M2-93266db69ca3",
+    "test": "test_authority::test_rejection_blocks_standing_permission_for_rejected_version",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "97b218cc1e32832f1fc3b8b670c09527b02ae6773958b2d55d92111346486791",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.038",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_authority.py"
+  },
+  {
+    "test_id": "M2-b2369ef7378a",
+    "test": "test_authority::test_preview_cannot_extend_approved_24_hour_expiry",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "97b218cc1e32832f1fc3b8b670c09527b02ae6773958b2d55d92111346486791",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.032",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_authority.py"
+  },
+  {
+    "test_id": "M2-fd4ea240d283",
+    "test": "test_authority::test_single_executor_and_owner_report_survives_old_action_failure",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "97b218cc1e32832f1fc3b8b670c09527b02ae6773958b2d55d92111346486791",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.044",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_authority.py"
+  },
+  {
+    "test_id": "M2-c00e21ff7dad",
+    "test": "test_authority::test_review_preparation_replay_and_material_details",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "97b218cc1e32832f1fc3b8b670c09527b02ae6773958b2d55d92111346486791",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.033",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_authority.py"
+  },
+  {
+    "test_id": "M2-2f9776ad9ea2",
+    "test": "test_boundaries::test_timezone_changes_roundtrip_and_late_release",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.044",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-fd0e5b12f3c7",
+    "test": "test_boundaries::test_calendar_windows_follow_dst[2027-03-14T12:00:00+00:00-23]",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.025",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-98f64f4609a0",
+    "test": "test_boundaries::test_calendar_windows_follow_dst[2027-11-07T12:00:00+00:00-25]",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.031",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-936db9fd2742",
+    "test": "test_boundaries::test_cross_account_policy_and_exact_membership",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.047",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-2a6c58284819",
+    "test": "test_boundaries::test_repost_review_and_owner_report_are_distinct",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.029",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-e5f25909b6e4",
+    "test": "test_boundaries::test_api_session_csrf_schema_receipt_and_events",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.104",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-989814847c04",
+    "test": "test_boundaries::test_invalid_fact_numbers_rejected[1.5]",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.001",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-35f69eef4369",
+    "test": "test_boundaries::test_invalid_fact_numbers_rejected[9223372036854775808]",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.000",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-91142746d6d5",
+    "test": "test_boundaries::test_invalid_fact_numbers_rejected[nan]",
+    "requirements": [
+      "FR-008",
+      "FR-012",
+      "FR-013",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "f4bb48a47f1c6475d4e7336605a93b99a9180296c778db6280f253d41ef8918a",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.000",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_boundaries.py"
+  },
+  {
+    "test_id": "M2-f3958498deaa",
+    "test": "test_controls::test_independent_holds_and_restart",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.050",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-e374da27b8fa",
+    "test": "test_controls::test_concurrent_command_replay_and_conflicting_reuse",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.027",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-b92874e68db0",
+    "test": "test_controls::test_pause_blocks_claim_stop_releases_allowance",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.038",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-3a5323743468",
+    "test": "test_controls::test_recovery_keeps_uncertainty_across_restart",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.043",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-d3a070e34366",
+    "test": "test_controls::test_daily_cap_and_confirmed_duplicate",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.047",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-1971015f1ae1",
+    "test": "test_controls::test_fact_edit_invalidates_exact_review",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.035",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-009e307d4e00",
+    "test": "test_controls::test_lease_expiry_and_policy_change_before_claim",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-012",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "4fd694546cb2c8971e68359031740d74a058f761ca96f037413415b5848177b5",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.031",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_controls.py"
+  },
+  {
+    "test_id": "M2-671f552be1ac",
+    "test": "test_criteria::test_unknown_salary_excluded_company_and_preferences",
+    "requirements": [
+      "FR-004",
+      "FR-008",
+      "FR-009",
+      "FD-002"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "b7e7242922029f0dace449c40aa2fb9815d015e449a90d0b0b1342bcf97e6593",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.000",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_criteria.py"
+  },
+  {
+    "test_id": "M2-376717d8c3da",
+    "test": "test_criteria::test_criteria_edit_cancels_unclaimed_preserves_lineage_and_blocks_unknown",
+    "requirements": [
+      "FR-004",
+      "FR-008",
+      "FR-009",
+      "FD-002"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "b7e7242922029f0dace449c40aa2fb9815d015e449a90d0b0b1342bcf97e6593",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.036",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_criteria.py"
+  },
+  {
+    "test_id": "M2-933bd54b2a74",
+    "test": "test_criteria::test_conflicting_proposal_is_visible_without_discarding_verified_value",
+    "requirements": [
+      "FR-004",
+      "FR-008",
+      "FR-009",
+      "FD-002"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "b7e7242922029f0dace449c40aa2fb9815d015e449a90d0b0b1342bcf97e6593",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.024",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_criteria.py"
+  },
+  {
+    "test_id": "M2-d208d8b62117",
+    "test": "test_domain_exit::test_new_task_during_global_pause_is_held",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-009",
+      "FD-001",
+      "FD-002",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c623774d25e13c65af49c74886faaef792113a268d001b731d6deccdd12ab997",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.025",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_domain_exit.py"
+  },
+  {
+    "test_id": "M2-510d279c5258",
+    "test": "test_domain_exit::test_resume_does_not_restore_expired_authority",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-009",
+      "FD-001",
+      "FD-002",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c623774d25e13c65af49c74886faaef792113a268d001b731d6deccdd12ab997",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.033",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_domain_exit.py"
+  },
+  {
+    "test_id": "M2-0db31b369d1e",
+    "test": "test_domain_exit::test_distinct_repost_and_unknown_identity",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-009",
+      "FD-001",
+      "FD-002",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c623774d25e13c65af49c74886faaef792113a268d001b731d6deccdd12ab997",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.020",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_domain_exit.py"
+  },
+  {
+    "test_id": "M2-96e7ccb98aea",
+    "test": "test_domain_exit::test_fact_source_scope_and_immutability",
+    "requirements": [
+      "FR-018",
+      "FR-008",
+      "FR-009",
+      "FD-001",
+      "FD-002",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c623774d25e13c65af49c74886faaef792113a268d001b731d6deccdd12ab997",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.021",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_domain_exit.py"
+  },
+  {
+    "test_id": "M2-d0dfbb3c05e4",
+    "test": "test_durability::test_receipts_and_holds_survive_reopen",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.024",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-656a32fdbf61",
+    "test": "test_durability::test_pause_claim_race_has_single_serial_order",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.033",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-c03667279660",
+    "test": "test_durability::test_identical_outcome_is_idempotent",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.031",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-fb20d4bbe968",
+    "test": "test_durability::test_monotonic_lease_and_backward_wall_time_fail_closed",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.029",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-932c8e8db620",
+    "test": "test_durability::test_list_cursor_scope_tamper_expiry",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.022",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-5ff8fac1e135",
+    "test": "test_durability::test_sse_event_and_expired_cursor_signal",
+    "requirements": [
+      "FR-018",
+      "FR-019",
+      "T-CTRL",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "bb228d0ca849afde42b63bc2737f6e4a16bc4d7f02555f7218205a1de475b1a1",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.050",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_durability.py"
+  },
+  {
+    "test_id": "M2-de8cc1f3f3a1",
+    "test": "test_fact_conflicts::test_conflicting_import_does_not_replace_verified_fact_or_approval",
+    "requirements": [
+      "FR-009",
+      "FR-028",
+      "FD-003"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "fd37b8b6b8df3926b99eda29b7a86084e804001b1a8a6be6e5a6aa9e27d31470",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.034",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_fact_conflicts.py"
+  },
+  {
+    "test_id": "M2-b620a52661e7",
+    "test": "test_lifecycle_corrections::test_wait_survives_holds_and_zero_match_completion",
+    "requirements": [
+      "FR-018",
+      "FR-015",
+      "FR-028",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "cf6076a3a7cc493bf8ebc0f2f8012f588d0e52e3a981562b3ddbd14dc511e26b",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.030",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_lifecycle_corrections.py"
+  },
+  {
+    "test_id": "M2-558b6b99fb8f",
+    "test": "test_lifecycle_corrections::test_completion_rejects_prepared_work_and_blockers_deny_dispatch",
+    "requirements": [
+      "FR-018",
+      "FR-015",
+      "FR-028",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "cf6076a3a7cc493bf8ebc0f2f8012f588d0e52e3a981562b3ddbd14dc511e26b",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.035",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_lifecycle_corrections.py"
+  },
+  {
+    "test_id": "M2-6c07c5a7f582",
+    "test": "test_lifecycle_corrections::test_conflicting_terminal_outcome_requires_exact_review_and_reconciles_counts",
+    "requirements": [
+      "FR-018",
+      "FR-015",
+      "FR-028",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "cf6076a3a7cc493bf8ebc0f2f8012f588d0e52e3a981562b3ddbd14dc511e26b",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.035",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_lifecycle_corrections.py"
+  },
+  {
+    "test_id": "M2-a3675b6296f5",
+    "test": "test_lifecycle_corrections::test_stale_correction_and_audit_tamper_detection",
+    "requirements": [
+      "FR-018",
+      "FR-015",
+      "FR-028",
+      "T-REPLAY"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "cf6076a3a7cc493bf8ebc0f2f8012f588d0e52e3a981562b3ddbd14dc511e26b",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.044",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_lifecycle_corrections.py"
+  },
+  {
+    "test_id": "M2-e6e9a0ad3053",
+    "test": "test_m2_acceptance::test_v2_store_upgrades_without_changing_prior_checksums",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.040",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-8a1916a22c5a",
+    "test": "test_m2_acceptance::test_capability_rechecked_and_blocking_reason_persisted",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.038",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-6985516a5c49",
+    "test": "test_m2_acceptance::test_segment_rollover_and_wrong_audit_key",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.070",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-541d9bac7e36",
+    "test": "test_m2_acceptance::test_failed_intent_transaction_leaves_no_reservation_or_guard",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.069",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-42ccbe826039",
+    "test": "test_m2_acceptance::test_full_100_mib_stream_limit_without_disk_spooling",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.300",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-11245bbbdc33",
+    "test": "test_m2_acceptance::test_expired_policy_creation_replay_returns_original_receipt",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.023",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-72ea5c761fa7",
+    "test": "test_m2_acceptance::test_claim_crossing_midnight_moves_daily_reservation",
+    "requirements": [
+      "FR-012",
+      "FR-013",
+      "FR-018",
+      "FR-028",
+      "T-DATA",
+      "T-COST"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "c95619749bd8ec6543685d95239cc1413faded59d6cd83f416fb60b5a6f25695",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.033",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_m2_acceptance.py"
+  },
+  {
+    "test_id": "M2-e3f77d93eeaa",
+    "test": "test_response_contracts::test_task_receipt_and_stream_events_match_approved_schema",
+    "requirements": [
+      "FR-018",
+      "LLD-07"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "424fd2b58183c84cada735f8936ba4c4a616b7537eba2c43cad786b55ffdd21f",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.032",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_response_contracts.py"
+  },
+  {
+    "test_id": "M2-eb82b8f1621c",
+    "test": "test_uploads::test_chunked_multipart_limits_duplicates_and_truncation",
+    "requirements": [
+      "FR-009",
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "36621603efb638b16a90b852349e57433177863b2bca5f7d863c3b274add0da3",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.019",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_uploads.py"
+  },
+  {
+    "test_id": "M2-31e26440a362",
+    "test": "test_uploads::test_upload_status_selection_idempotency_auth_and_safe_files",
+    "requirements": [
+      "FR-009",
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "36621603efb638b16a90b852349e57433177863b2bca5f7d863c3b274add0da3",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.125",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_uploads.py"
+  },
+  {
+    "test_id": "M2-bc69fe05f9e3",
+    "test": "test_uploads::test_publication_failure_and_recovery_are_visible",
+    "requirements": [
+      "FR-009",
+      "FR-011",
+      "FR-028",
+      "T-DATA"
+    ],
+    "milestone": "M2",
+    "environment": "environment.json",
+    "fixture_source_digest": "36621603efb638b16a90b852349e57433177863b2bca5f7d863c3b274add0da3",
+    "preconditions": "Isolated encrypted store and synthetic inputs unless the test explicitly reopens or upgrades a fixture store",
+    "fault_point": "See named test and test source; deterministic injected boundary where applicable",
+    "result": "passed",
+    "duration_seconds": "0.106",
+    "evidence": "domain.xml",
+    "source": "tests/domain/test_uploads.py"
+  }
+]

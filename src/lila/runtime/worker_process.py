@@ -1,14 +1,8 @@
-"""M1 worker liveness only; LangGraph execution is added in M3."""
-import hashlib
-import http.client
+"""Private worker boot with independently scheduled liveness and local work."""
 import json
 import msvcrt
 import os
-import ssl
 import sys
-import time
-from cryptography import x509
-from cryptography.hazmat.primitives import serialization
 
 
 def main():
@@ -18,25 +12,13 @@ def main():
     if len(data)>8192:
         raise ValueError("boot frame too large")
     boot = json.loads(data)
-    context = ssl.create_default_context(cafile=boot["ca_path"])
-    while True:
-        connection = http.client.HTTPSConnection("127.0.0.1",boot["port"],context=context,timeout=2)
-        try:
-            connection.connect()
-            certificate = x509.load_der_x509_certificate(connection.sock.getpeercert(binary_form=True))
-            spki = certificate.public_key().public_bytes(serialization.Encoding.DER,serialization.PublicFormat.SubjectPublicKeyInfo)
-            if hashlib.sha256(spki).hexdigest() != boot["server_spki_pin"]:
-                return
-            connection.request("POST","/internal/v1/health",body=b"{}",headers={"Authorization":"Bearer "+boot["token"],"X-Lila-Generation":str(boot["generation"]),"Content-Type":"application/json"})
-            response = connection.getresponse()
-            response.read()
-            if response.status != 200:
-                return
-        except (OSError,ssl.SSLError,http.client.HTTPException):
-            return
-        finally:
-            connection.close()
-        time.sleep(2)
+    import asyncio
+    from lila.worker.process_loop import run
+    try:
+        asyncio.run(run(boot))
+    except BaseException:
+        # No credential-bearing request details or document content in child logs.
+        os._exit(1)
 
 
 if __name__ == "__main__":

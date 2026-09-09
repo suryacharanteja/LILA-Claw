@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
 from fastapi.testclient import TestClient
 from starlette.websockets import WebSocketDisconnect
 from lila.api.auth import create_app
-from lila.api.extension import attach_extension, encode, decode
+from lila.api.extension import attach_extension, encode, decode,capability_report
 from lila.security.pairing import Pairing, transcript
 
 
@@ -28,6 +28,10 @@ def test_websocket_origin_authentication_renewal_and_revocation(auth):
         with pytest.raises(WebSocketDisconnect):
             with client.websocket_connect(url,headers={"Origin":"https://evil.invalid"}):
                 pass
+        with client.websocket_connect(url,headers={'Origin':'chrome-extension://'+extension_id}) as unauthenticated:
+            unauthenticated.send_json({'type':'capabilities','payload':{'protocol_version':1,'tools':['inspect_context'],'adapter_ids':['fixture-v1']}})
+            with pytest.raises(WebSocketDisconnect):
+                unauthenticated.receive_json()
         with client.websocket_connect(url,headers={"Origin":"chrome-extension://"+extension_id}) as ws:
             ws.send_json({"type":"authenticate","payload":{"credential_id":credential["credential_id"]}})
             def authenticate():
@@ -39,8 +43,26 @@ def test_websocket_origin_authentication_renewal_and_revocation(auth):
             authenticate()
             ws.send_json({"type":"status","payload":{}})
             assert not ws.receive_json()["payload"]["execution_ready"]
+            ws.send_json({'type':'capabilities','payload':{'protocol_version':1,'tools':['inspect_context'],'adapter_ids':['fixture-v1']}})
+            assert ws.receive_json()=={'type':'capabilities_received','payload':{'accepted':True,'execution_ready':False}}
+            ws.send_json({'type':'status','payload':{}})
+            assert ws.receive_json()['payload']['capabilities_reported'] is True
             ws.send_json({"type":"renew","payload":{}})
             authenticate()
+            ws.send_json({'type':'status','payload':{}})
+            assert ws.receive_json()['payload']['capabilities_reported'] is False
             sessions.revoke(credential["principal_id"],1)
             with pytest.raises(WebSocketDisconnect):
                 ws.receive_json()
+
+
+@pytest.mark.parametrize('change',[
+    {'protocol_version':True},{'protocol_version':2},{'tools':['Runtime.evaluate']},
+    {'tools':['inspect_context','inspect_context']},{'adapter_ids':['fixture','fixture']},
+    {'adapter_ids':['https://remote.example/code.js']},{'adapter_ids':['x'*101]},
+    {'execution_ready':True},{'adapter_ids':['fixture']*33},
+])
+def test_capability_report_rejects_invalid_or_authority_fields(change):
+    payload={'protocol_version':1,'tools':['inspect_context'],'adapter_ids':['fixture']}
+    with pytest.raises(ValueError):
+        capability_report(dict(payload,**change))

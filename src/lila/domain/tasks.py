@@ -34,7 +34,12 @@ class Tasks:
         state = "DRAFT" if not run else run[1]
         if run and state not in TERMINAL:
             reasons.extend(self.readiness())
+            if hasattr(self,'work_service') and not db.execute('SELECT 1 FROM task_execution WHERE task_id=?',(task_id,)).fetchone():
+                reasons.append('EXECUTION_SETTINGS_REQUIRED')
             reasons.extend(r[0] for r in db.execute('SELECT reason FROM run_blockers WHERE run_id=? ORDER BY reason',(run[0],)))
+            work=db.execute("SELECT error_code FROM worker_jobs WHERE run_id=? AND state='WAITING'",(run[0],)).fetchone()
+            if work:
+                reasons.append(work[0] or 'OUTCOME_UNRESOLVED')
             if global_hold:
                 reasons.append("GLOBAL_HOLD")
             if run[2]:

@@ -67,7 +67,8 @@ class Boundary:
             if message["type"] == "http.disconnect":
                 return
             body.extend(message.get("body", b""))
-            if len(body) > 1024*1024:
+            limit = 4*1024*1024 if scope['path'] in {'/internal/v1/checkpoints','/internal/v1/checkpoints/writes'} else 1024*1024
+            if len(body) > limit:
                 await error("PAYLOAD_TOO_LARGE", 413)(scope, receive, send)
                 return
             if not message.get("more_body"):
@@ -95,9 +96,14 @@ class Boundary:
         await self.app(scope, replay, secure_send)
 
 
-def create_app(sessions, port, health=lambda: {"state":"STARTING", "blockers":["DOMAIN_NOT_IMPLEMENTED"]}, workers=None):
+def create_app(sessions, port, health=lambda: {"state":"STARTING", "blockers":["DOMAIN_NOT_IMPLEMENTED"]}, workers=None, worker_heartbeat=None):
     app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
     app.add_middleware(Boundary, host=f"127.0.0.1:{port}")
+    from fastapi.exceptions import RequestValidationError
+    @app.exception_handler(RequestValidationError)
+    async def validation_error(request,exc):
+        # Framework validation details include raw input, potentially provider keys.
+        return error('INVALID_REQUEST',422)
 
     @app.exception_handler(AuthError)
     async def auth_error(request, exc):
@@ -142,7 +148,9 @@ def create_app(sessions, port, health=lambda: {"state":"STARTING", "blockers":["
             raise AuthError("STALE_WORKER")
         if workers is None or not authorization.startswith("Bearer "):
             raise AuthError("STALE_WORKER")
-        workers.authenticate(authorization[7:],generation)
+        worker=workers.authenticate(authorization[7:],generation)
+        if worker_heartbeat is not None:
+            worker_heartbeat(worker)
         return {"live": True}
 
     return app

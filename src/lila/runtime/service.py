@@ -35,7 +35,7 @@ def bind_loopback(preferred=43127):
 
 
 class Runtime:
-    def __init__(self, root: Path, *, require_trust=True, preferred_port=43127, extension_id=None, embedded_test_worker=False):
+    def __init__(self, root: Path, *, require_trust=True, preferred_port=43127, extension_id=None, embedded_test_worker=False, browser_adapter=None):
         self.root = root
         self.config,self.keys = load(root)
         if require_trust and not self.config["trust_confirmed"]:
@@ -44,6 +44,7 @@ class Runtime:
         self.preferred_port = preferred_port
         self.extension_id = extension_id
         self.embedded_test_worker = embedded_test_worker
+        self.browser_adapter = browser_adapter
         self.workers = WorkerRegistry()
         self.worker = WorkerProcess(self.workers)
         self.shutdown = threading.Event()
@@ -87,19 +88,35 @@ class Runtime:
             self.sessions = Sessions(self.resources[1],self.keys["session_hash"])
             from lila.domain.service import Domain
             from lila.domain.artifacts import Artifacts
-            self.domain = Domain(self.resources[0],self.keys["audit"])
+            self.domain = Domain(self.resources[0],self.keys["audit"],
+                readiness=lambda:([] if self.workers.healthy() else ['WORKER_UNAVAILABLE'])+([] if self.browser_adapter is not None else ['BROWSER_UNAVAILABLE']),
+                capability=lambda account,domain,tab:self.browser_adapter is not None and self.browser_adapter.capability(account,domain,tab) is True)
             self.domain.verify_audit()
             self.domain.artifacts = Artifacts(self.domain,self.root/"objects",self.keys["artifact_wrap"])
             self.domain.recover()
+            from lila.domain.ai import AI
+            AI(self.domain).recover()
             self.domain.artifacts.recover()
             from lila.domain.documents import Documents
             self.domain.documents = Documents(self.domain,self.domain.artifacts)
             self.domain.documents.recover()
             self.listener = bind_loopback(self.preferred_port)
             self.port = self.listener.getsockname()[1]
-            app = create_app(self.sessions,self.port,self.status,self.workers)
+            from lila.domain.worker_leases import renew
+            app = create_app(self.sessions,self.port,self.status,self.workers,lambda worker:renew(self.domain,worker))
             from lila.api.domain import attach_domain
             attach_domain(app,self.sessions,self.domain,lambda:self.control("quit"))
+            from lila.api.checkpoints import attach_checkpoints
+            attach_checkpoints(app,self.domain,self.workers)
+            from lila.api.extraction import attach_extraction
+            attach_extraction(app,self.domain,self.workers)
+            from lila.api.ai import attach_ai
+            from lila.security.provider_credentials import ProviderCredentials
+            attach_ai(app,self.domain,self.sessions,self.workers,ProviderCredentials(self.sessions,self.keys['session_hash']))
+            from lila.domain.work import Work
+            from lila.api.work import attach_work
+            self.work = Work(self.domain,self.browser_adapter)
+            attach_work(app,self.domain,self.sessions,self.workers,self.work)
             from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
             from lila.security.pairing import Pairing
             from lila.api.extension import attach_extension

@@ -35,6 +35,19 @@ class SelectDocument(BaseModel):
     format: Literal['pdf','docx']
 
 
+class CriteriaCommand(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    command_id: UUID
+    expected_revision: int = Field(ge=1,strict=True)
+    criteria: dict
+
+
+class PrepareReview(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    command_id: UUID
+    action_ids: list[UUID] = Field(min_length=1,max_length=100)
+
+
 def attach_domain(app,sessions,domain,quit_callback=None):
     upload_lock = asyncio.Lock()
     @app.exception_handler(DomainError)
@@ -88,6 +101,10 @@ def attach_domain(app,sessions,domain,quit_callback=None):
         owner = principal(request,True)
         return await run_in_threadpool(domain.task_command,owner,id,await request.json())
 
+    @app.post('/api/v1/tasks/{id}/criteria')
+    def revise_criteria(id:str,body:CriteriaCommand,request:Request):
+        return domain.revise_criteria(principal(request,True),id,str(body.command_id),body.expected_revision,body.criteria)
+
     @app.post('/api/v1/execution/commands')
     async def global_command(request:Request):
         owner = principal(request,True)
@@ -115,6 +132,15 @@ def attach_domain(app,sessions,domain,quit_callback=None):
     async def approval(id:str,request:Request):
         owner = principal(request,True)
         return await run_in_threadpool(domain.approval_command,owner,id,await request.json())
+
+    @app.post('/api/v1/reviews')
+    def prepare_review(body:PrepareReview,request:Request):
+        return domain.prepare_review([str(a) for a in body.action_ids],principal=principal(request,True),command_id=str(body.command_id))
+
+    @app.get('/api/v1/reviews/{id}')
+    def review(id:str,request:Request):
+        principal(request)
+        return domain.review(id)
 
     @app.post('/api/v1/applications/{id}/manual-outcome')
     async def manual(id:str,request:Request):
@@ -153,7 +179,8 @@ def attach_domain(app,sessions,domain,quit_callback=None):
                         raise
                     return
                 for event in page['events']:
-                    yield 'id: '+event['cursor']+'\nevent: state_event\ndata: '+json.dumps(event)+'\n\n'
+                    resume = domain.cursor(['events',owner],event['cursor'])
+                    yield 'id: '+resume+'\nevent: state_event\ndata: '+json.dumps(event)+'\n\n'
                 cursor = page['next_cursor']
                 if len(page['events'])<100:
                     yield ': heartbeat\n\n'
